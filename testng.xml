@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Playwright Test Suite" parallel="false">
+
+    <test name="smoke Tests">
+
+        <classes>
+            <class name="loginTestCases.ValidLoginTestCases"/>
+            <class name="loginTestCases.InvalidLoginTestCases"/>
+            <class name="tests.HomepageTest"/>
+        </classes>
+
+    </test>
+
+</suite>
