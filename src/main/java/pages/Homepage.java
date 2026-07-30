@@ -115,6 +115,9 @@ public class Homepage {
         } else if (newTabUrl.contains("csvviewer")) {
             BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
             System.out.println("CSV Viewer is opened.");
+        } else if (newTabUrl.contains("drawing")) {
+            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+            System.out.println("Drawing Viewer is opened.");
         } else {
             BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
             System.out.println("File is not opened in any viewer.");

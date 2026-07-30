@@ -94,10 +94,10 @@ public class HomepageTest extends BaseDriver {
 		new Homepage(page).search_File_in_SearchBar(".xlsx");
 	}
 
-	@Test(priority = 13, description = "Verify_tif_search")
-	public void Verify_tif_search() {
+	@Test(priority = 13, description = "Verify_tiff_search")
+	public void Verify_tiff_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".tif");
+		new Homepage(page).search_File_in_SearchBar(".tiff");
 	}
 
 }

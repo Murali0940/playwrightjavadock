@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="73.206" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="256.576" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire15828029450771943467\surefirebooter-20260730181807922_3.jar C:\Users\DELL\AppData\Local\Temp\surefire15828029450771943467 2026-07-30T18-18-07_778-jvmRun1 surefire-20260730181807922_1tmp surefire_0-20260730181807922_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire5593139608712447477\surefirebooter-20260730234156179_3.jar C:\Users\DELL\AppData\Local\Temp\surefire5593139608712447477 2026-07-30T23-41-56_052-jvmRun1 surefire-20260730234156179_1tmp surefire_0-20260730234156179_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\PlaywrightJava\playwrightjavadock\target\test-classes;D:\PlaywrightJava\playwrightjavadock\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.55.0\playwright-1.55.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.55.0\driver-1.55.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.55.0\driver-bundle-1.55.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\DELL\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
     <property name="allure.results.directory" value="D:\PlaywrightJava\playwrightjavadock\target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire15828029450771943467\surefirebooter-20260730181807922_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire5593139608712447477\surefirebooter-20260730234156179_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -59,29 +59,240 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="validLoginTest" classname="loginTestCases.ValidLoginTestCases" time="4.607">
-    <system-out><![CDATA[Actual URL is: https://www.alfadock-pack.com/userlogin.html
+  <testcase name="validLoginTest" classname="loginTestCases.ValidLoginTestCases" time="3.941">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: admin
+User password is: admin
+User login button clicked.
+Actual URL is: https://www.alfadock-pack.com/userlogin.html
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_login_with_invalid_Username_and_Password" classname="loginTestCases.InvalidLoginTestCases" time="2.471"/>
-  <testcase name="Verify_login_with_empty_username_and_wrong_password" classname="loginTestCases.InvalidLoginTestCases" time="2.195"/>
-  <testcase name="Verify_login_with_wrong_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.173"/>
-  <testcase name="Verify_login_with_empty_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.179"/>
-  <testcase name="Verify_userlogin_with_invalid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.771"/>
-  <testcase name="Verify_Userlogin_with_valid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.556"/>
-  <testcase name="Verify_Userlogin_with_invalid_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="4.407"/>
-  <testcase name="Verify_Userlogin_with_invalid_username_and_valid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.553"/>
-  <testcase name="Verify_Userlogin_with_empty_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.427"/>
-  <testcase name="validLoginTest" classname="tests.HomepageTest" time="4.033"/>
-  <testcase name="Verify_pdf_search" classname="tests.HomepageTest" time="7.104">
+  <testcase name="Verify_login_with_invalid_Username_and_Password" classname="loginTestCases.InvalidLoginTestCases" time="2.45">
+    <system-out><![CDATA[Company username is: atkgi
+Company password is: 1224
+Company login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_login_with_empty_username_and_wrong_password" classname="loginTestCases.InvalidLoginTestCases" time="2.142">
+    <system-out><![CDATA[Company username is: 
+Company password is: 1234
+Company login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_login_with_wrong_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.191">
+    <system-out><![CDATA[Company username is: 
+Company password is: 1234
+Company login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_login_with_empty_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.26">
+    <system-out><![CDATA[Company username is: 
+Company password is: 
+Company login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_userlogin_with_invalid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.838">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: atkgi
+User password is: 1234
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_Userlogin_with_valid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.746">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: Atkgi
+User password is: asdfsafa
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_Userlogin_with_invalid_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="4.451">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: tkgi
+User password is: 
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_Userlogin_with_invalid_username_and_valid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.598">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: Atki
+User password is: 1234
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_Userlogin_with_empty_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.375">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: 
+User password is: asfgasg
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="validLoginTest" classname="tests.HomepageTest" time="4.017">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: admin
+User password is: admin
+User login button clicked.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_pdf_search" classname="tests.HomepageTest" time="18.234">
     <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
-Filename option is already selected.
-Search term entered: Test
+Filename option is already selected..
+Search term entered: .pdf
 Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/59439417/erp?filename=test20260727.pdf
+Screenshot saved: screenshots/Search_Result_.pdf_20260730_234315.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_a3dasm_search" classname="tests.HomepageTest" time="16.312">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .a3dasm
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/72016757
+Screenshot saved: screenshots/Search_Result_.a3dasm_20260730_234331.png
+3D Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_a3dprt_search" classname="tests.HomepageTest" time="15.769">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .a3dprt
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/72016758
+Screenshot saved: screenshots/Search_Result_.a3dprt_20260730_234347.png
+3D Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_csv_search" classname="tests.HomepageTest" time="16.014">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .csv
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/csvviewer/73040022
+Screenshot saved: screenshots/Search_Result_.csv_20260730_234403.png
+CSV Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_dxf_search" classname="tests.HomepageTest" time="16.014">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .dxf
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/73040021/file?filename=MA22R-222-2-R-03.dxf
+Screenshot saved: screenshots/Search_Result_.dxf_20260730_234419.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_dwg_search" classname="tests.HomepageTest" time="16.037">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .dwg
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/68377339/file?filename=Sample1-Sheet_1.dwg
+Screenshot saved: screenshots/Search_Result_.dwg_20260730_234435.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_docx_search" classname="tests.HomepageTest" time="15.508">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .docx
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/49461596/office?filename=AT-TestDOCX_1.docx
+Screenshot saved: screenshots/Search_Result_.docx_20260730_234451.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_pptx_search" classname="tests.HomepageTest" time="15.589">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .pptx
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/72737853/file?filename=%E5%B1%B1%E5%B2%B8%E5%B7%A5%E6%A5%AD%E4%BB%95%E6%A7%98%E6%9B%B8260312.pptx
+Screenshot saved: screenshots/Search_Result_.pptx_20260730_234506.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_jpg_search" classname="tests.HomepageTest" time="16.892">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .jpg
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/drawing/294444/camera?filename=%E5%A4%96%E9%83%A8%E3%83%9B%E3%82%99%E3%83%83%E3%82%AF%E3%82%B9%E4%B8%AD%E6%9D%BF123.jpg
+Screenshot saved: screenshots/Search_Result_.jpg_20260730_234523.png
+Drawing Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_png_search" classname="tests.HomepageTest" time="16.195">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .png
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/drawing/9711/camera?filename=.png
+Screenshot saved: screenshots/Search_Result_.png_20260730_234539.png
+Drawing Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_xlsx_search" classname="tests.HomepageTest" time="16.12">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .xlsx
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/72016761/file?filename=BOM-2002201Z75.xlsx
+Screenshot saved: screenshots/Search_Result_.xlsx_20260730_234556.png
+PDF Viewer is opened.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_tiff_search" classname="tests.HomepageTest" time="15.504">
+    <system-out><![CDATA[Not all search options are checked. Current states - Filename: true, Attributes: false, Content: false
+Filename option is already selected..
+Search term entered: .tiff
+Page loaded after search.
+First search result opened.
+New Tab URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/66546223/file?filename=TKGweldtest-1.tiff.pdf
+Screenshot saved: screenshots/Search_Result_.tiff_20260730_234611.png
+PDF Viewer is opened.
+Returned to Home page.
 ]]></system-out>
   </testcase>
 </testsuite>
