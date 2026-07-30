@@ -62,9 +62,9 @@ public class Homepage {
                 if (!filename.isChecked()) {
                     attribute.uncheck();
                     content.uncheck();
-                    System.out.println("Filename option selected.");
+                    System.out.println("Filename option selected..");
                 } else {
-                    System.out.println("Filename option is already selected.");
+                    System.out.println("Filename option is already selected..");
                 }
                 break;
             case "attributes":
