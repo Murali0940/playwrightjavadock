@@ -1,6 +1,12 @@
 package base;
 
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import com.microsoft.playwright.*;
 
@@ -15,11 +21,11 @@ public class BaseDriver {
 
     @BeforeClass
 
-    public void setup(){
+    public void setup() {
 
-        playwright=Playwright.create();
+        playwright = Playwright.create();
 
-        browser=playwright.chromium()
+        browser = playwright.chromium()
 
                 .launch(new BrowserType.LaunchOptions()
 
@@ -27,19 +33,19 @@ public class BaseDriver {
 
                         .setSlowMo(Double.parseDouble(ConfigReader.get("slowmo"))));
 
-        context=browser.newContext();
+        context = browser.newContext();
 
-        page=context.newPage();
+        page = context.newPage();
 
         page.navigate(ConfigReader.get("base.url"));
-        
-        //page.pause(); //playwright inspector will open and you can debug your test 
+
+        // page.pause(); //playwright inspector will open and you can debug your test
 
     }
 
     @AfterClass
 
-    public void teardown(){
+    public void teardown() {
 
         context.close();
 
@@ -48,5 +54,27 @@ public class BaseDriver {
         playwright.close();
 
     }
+
+    public static void takeScreenshot(Page page, String screenshotName) {
+
+        String timestamp = LocalDateTime.now()
+                .format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+
+        String path = "screenshots/" + screenshotName + "_" + timestamp + ".png";
+
+        page.screenshot(new Page.ScreenshotOptions()
+                .setPath(Paths.get(path))
+                .setFullPage(true));
+
+        System.out.println("Screenshot saved: " + path);
+    }
+
+    // @AfterMethod
+    // public void tearDown(ITestResult result) {
+
+    // if (result.getStatus() == ITestResult.SUCCESS) {
+    // takeScreenshot(result.getName());
+    // }
+    // }
 
 }
