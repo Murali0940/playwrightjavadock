@@ -10,25 +10,28 @@ public class CompLoginPage {
     private Locator txtPassword;
     private Locator btnLogin;
 
-    public CompLoginPage(Page page){
+    public CompLoginPage(Page page) {
 
-        this.page=page;
+        this.page = page;
 
-        txtUsername=page.locator("#username");
+        txtUsername = page.locator("#username");
 
-        txtPassword=page.locator("#password");
+        txtPassword = page.locator("#password");
 
-        btnLogin=page.locator("#logmein");
+        btnLogin = page.locator("#logmein");
 
     }
 
-    public UserLoginPage companyLogin(String user,String pass){
+    public UserLoginPage companyLogin(String user, String pass) {
 
         txtUsername.fill(user);
+        System.out.println("Company username is: " + user);
 
         txtPassword.fill(pass);
+        System.out.println("Company password is: " + pass);
 
         btnLogin.click();
+        System.out.println("Company login button clicked.");
 
         return new UserLoginPage(page);
 

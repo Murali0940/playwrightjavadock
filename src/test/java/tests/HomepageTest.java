@@ -12,7 +12,7 @@ import utils.ConfigReader;
 
 public class HomepageTest extends BaseDriver {
 
-	@Test(priority = 1, description = "Verify login with valid Company and User credentials")
+	@Test(priority = 1, description = "Verify login with valid Company and User credentials..")
 	public void validLoginTest() {
 
 		Locator languageDropdown = page.locator("#mySelect");

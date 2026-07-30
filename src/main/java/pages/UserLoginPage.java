@@ -33,10 +33,13 @@ public class UserLoginPage {
     public Homepage userLogin(String user, String pass) {
 
         txtUsername1.fill(user);
+        System.out.println("User username is: " + user);
 
         txtPassword1.fill(pass);
+        System.out.println("User password is: " + pass);
 
         btnLogin1.click();
+        System.out.println("User login button clicked.");
 
         return new Homepage(page);
 
