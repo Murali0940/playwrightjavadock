@@ -4,7 +4,11 @@
 
 <suite name="Playwright Test Suite" parallel="false">
 
-    <test name="smoke Tests">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+     <test name="smoke Tests">
 
         <classes>
             <class name="loginTestCases.ValidLoginTestCases"/>
