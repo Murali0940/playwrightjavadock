@@ -5,7 +5,9 @@ import org.testng.Assert;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.LoadState;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
+import io.qameta.allure.Allure;
 import base.BaseDriver;
 
 public class Homepage {
@@ -80,60 +82,192 @@ public class Homepage {
 
     // PDF_Search_in_SearchBar
 
-    public void search_File_in_SearchBar(String searchTerm) {
+    // public void search_File_in_SearchBar(String searchTerm) {
 
-        Locator alfaDockLogo = page.locator("//img[contains(@src,'logo.png')]");
+    // Locator alfaDockLogo = page.locator("//img[contains(@src,'logo.png')]");
+
+    // searchInput.click();
+    // searchInput.fill(searchTerm);
+    // page.getByText("ui-btn").click();
+    // searchoptions("Filename");
+    // page.waitForTimeout(3000);
+    // page.locator("//img[@src='assets/ai-search.png']").click();
+    // System.out.println("Search term entered: " + searchTerm);
+    // page.waitForLoadState(LoadState.LOAD);
+    // System.out.println("Page loaded after search.");
+    // Page newPage = page.context().waitForPage(() -> {
+    // page.locator("div.imageDiv").first().dblclick();
+    // System.out.println("First search result opened.");
+    // });
+    // // Switches to the new tab automatically
+    // newPage.waitForLoadState(LoadState.LOAD);
+
+    // String newTabUrl = newPage.url();
+
+    // System.out.println("New Tab URL : " + newTabUrl);
+
+    // page.waitForTimeout(8000);
+
+    // if (newTabUrl.contains("pdfviewer")) {
+    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+    // System.out.println("PDF Viewer is opened.");
+    // } else if (newTabUrl.contains("a3dviewer")) {
+    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+    // System.out.println("3D Viewer is opened.");
+    // } else if (newTabUrl.contains("csvviewer")) {
+    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+    // System.out.println("CSV Viewer is opened.");
+    // } else if (newTabUrl.contains("drawing")) {
+    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+    // System.out.println("Drawing Viewer is opened.");
+    // } else {
+    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
+    // System.out.println("File is not opened in any viewer.");
+    // }
+
+    // newPage.close();
+    // alfadocklogo();
+    // alfaDockLogo.click();
+    // System.out.println("Returned to Home page.");
+
+    // }
+
+    // Click Search Button
+    private void clickSearchButton() {
+        page.locator("//img[@src='assets/ai-search.png']").waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE));
+
+        page.locator("//img[@src='assets/ai-search.png']").click();
+    }
+
+    // Search File
+
+    private void searchFile(String searchTerm) {
 
         searchInput.click();
         searchInput.fill(searchTerm);
+        Allure.step("Test entered in search bar");
+
         page.getByText("ui-btn").click();
         searchoptions("Filename");
-        page.waitForTimeout(3000);
-        page.locator("//img[@src='assets/ai-search.png']").click();
-        System.out.println("Search term entered: " + searchTerm);
-        page.waitForLoadState(LoadState.LOAD);
-        System.out.println("Page loaded after search.");
-        Page newPage = page.context().waitForPage(() -> {
-            page.locator("div.imageDiv").first().dblclick();
-            System.out.println("First search result opened.");
+        Allure.step("Filename is selected");
+
+        clickSearchButton();
+
+        page.waitForLoadState(LoadState.NETWORKIDLE);
+
+        System.out.println("Search completed : " + searchTerm);
+        Allure.step("Search completed : " + searchTerm);
+    }
+
+    // Open First Search Result
+    private Page openFirstSearchResult() {
+
+        return page.context().waitForPage(() -> {
+
+            Locator firstResult = page.locator("div.imageDiv").first();
+
+            firstResult.waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            firstResult.dblclick();
+            Allure.step("first file double cliked in search result");
+
         });
-        // Switches to the new tab automatically
-        newPage.waitForLoadState(LoadState.LOAD);
+    }
 
-        String newTabUrl = newPage.url();
+    // Wait Until Viewer Opens
+    private void waitForViewer(Page viewerPage) {
 
-        System.out.println("New Tab URL : " + newTabUrl);
-
-        page.waitForTimeout(8000);
-
-        if (newTabUrl.contains("pdfviewer")) {
-            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-            System.out.println("PDF Viewer is opened.");
-        } else if (newTabUrl.contains("a3dviewer")) {
-            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-            System.out.println("3D Viewer is opened.");
-        } else if (newTabUrl.contains("csvviewer")) {
-            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-            System.out.println("CSV Viewer is opened.");
-        } else if (newTabUrl.contains("drawing")) {
-            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-            System.out.println("Drawing Viewer is opened.");
-        } else {
-            BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-            System.out.println("File is not opened in any viewer.");
-        }
-
-        newPage.close();
-        alfaDockLogo.click();
-        System.out.println("Returned to Home page.");
+        viewerPage.waitForLoadState(LoadState.DOMCONTENTLOADED);
+        viewerPage.waitForLoadState(LoadState.NETWORKIDLE);
+        Allure.step("waiting for viewer");
 
     }
 
-    public void alfadocklogo() {
+    // Capture Screenshot
+    private void captureViewerScreenshot(Page viewerPage, String searchTerm) {
+
+        BaseDriver.takeScreenshot(viewerPage, "Search_Result_" + searchTerm);
+
+        Allure.step("screenshot captured");
+
+    }
+
+    // Detect Viewer
+    private String getViewerName(String url) {
+
+        if (url.contains("pdfviewer"))
+            return "PDF Viewer";
+
+        if (url.contains("a3dviewer"))
+            return "3D Viewer";
+
+        if (url.contains("csvviewer"))
+            return "CSV Viewer";
+
+        if (url.contains("drawing"))
+            return "Drawing Viewer";
+
+        return "Unknown Viewer";
+    }
+
+    // Return Home
+    private void returnToHome(Page viewerPage) {
+
+        viewerPage.close();
+
+        alfadocklogo();
+
+        page.locator("//img[contains(@src,'logo.png')]")
+                .waitFor(new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE));
+
+        page.locator("//img[contains(@src,'logo.png')]").click();
+
+        page.waitForLoadState(LoadState.NETWORKIDLE);
+
+        System.out.println("Returned to Home page.");
+        Allure.step("return to homepage");
+
+    }
+
+    public void search_File_in_SearchBar(String searchTerm) {
+
+        searchFile(searchTerm);
+
+        Page viewerPage = openFirstSearchResult();
+
+        waitForViewer(viewerPage);
+
+        String viewerUrl = viewerPage.url();
+
+        System.out.println("Viewer URL : " + viewerUrl);
+
+        captureViewerScreenshot(viewerPage, searchTerm);
+
+        System.out.println(getViewerName(viewerUrl) + " is opened.");
+
+        returnToHome(viewerPage);
+    }
+
+    private void alfadocklogo() {
         Assert.assertTrue(
                 logo.isVisible(),
                 "Alfadock logo is not visible on the Home page.");
         System.out.println("Alfadock Logo is visible.");
+    }
+
+    private void select_FileType() {
+
+        page.getByText("File").click();
+
+    }
+
+    private void select_FolderType() {
+
+        page.getByText("Folder").click();
+
     }
 
 }
