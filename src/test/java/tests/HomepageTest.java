@@ -31,73 +31,79 @@ public class HomepageTest extends BaseDriver {
 	@Test(priority = 2, description = "Verify_pdf_search")
 	public void Verify_pdf_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".pdf");
+		new Homepage(page).search_File_in_SearchBar(".pdf", "File");
 	}
 
 	@Test(priority = 3, description = "Verify_a3dasm_search")
 	public void Verify_a3dasm_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".a3dasm");
+		new Homepage(page).search_File_in_SearchBar(".a3dasm", "File");
 	}
 
 	@Test(priority = 4, description = "Verify_a3dprt_search")
 	public void Verify_a3dprt_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".a3dprt");
+		new Homepage(page).search_File_in_SearchBar(".a3dprt", "File");
 	}
 
 	@Test(priority = 5, description = "Verify_csv_search")
 	public void Verify_csv_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".csv");
+		new Homepage(page).search_File_in_SearchBar(".csv", "File");
 	}
 
 	@Test(priority = 6, description = "Verify_dxf_search")
 	public void Verify_dxf_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".dxf");
+		new Homepage(page).search_File_in_SearchBar(".dxf", "File");
 	}
 
 	@Test(priority = 7, description = "Verify_dwg_search")
 	public void Verify_dwg_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".dwg");
+		new Homepage(page).search_File_in_SearchBar(".dwg", "File");
 	}
 
 	@Test(priority = 8, description = "Verify_docx_search")
 	public void Verify_docx_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".docx");
+		new Homepage(page).search_File_in_SearchBar(".docx", "File");
 	}
 
 	@Test(priority = 9, description = "Verify_pptx_search")
 	public void Verify_pptx_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".pptx");
+		new Homepage(page).search_File_in_SearchBar(".pptx", "File");
 	}
 
 	@Test(priority = 10, description = "Verify_jpg_search")
 	public void Verify_jpg_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".jpg");
+		new Homepage(page).search_File_in_SearchBar(".jpg", "File");
 	}
 
 	@Test(priority = 11, description = "Verify_png_search")
 	public void Verify_png_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".png");
+		new Homepage(page).search_File_in_SearchBar(".png", "File");
 	}
 
 	@Test(priority = 12, description = "Verify_xlsx_search")
 	public void Verify_xlsx_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".xlsx");
+		new Homepage(page).search_File_in_SearchBar(".xlsx", "File");
 	}
 
 	@Test(priority = 13, description = "Verify_tiff_search")
 	public void Verify_tiff_search() {
 
-		new Homepage(page).search_File_in_SearchBar(".tiff");
+		new Homepage(page).search_File_in_SearchBar(".tiff", "File");
+	}
+
+	@Test(priority = 14, description = "Verify_folder_search")
+	public void Verify_folder_search() {
+
+		new Homepage(page).search_File_in_SearchBar("test", "Folder");
 	}
 
 	

@@ -142,15 +142,15 @@ public class Homepage {
 
     // Search File
 
-    private void searchFile(String searchTerm) {
+    private void searchFile(String searchTerm, String type) {
 
         searchInput.click();
         searchInput.fill(searchTerm);
         Allure.step("Test entered in search bar");
 
         page.getByText("ui-btn").click();
-        searchoptions("Filename");
-        Allure.step("Filename is selected");
+        selectType(type);
+        Allure.step("Type is selected");
 
         clickSearchButton();
 
@@ -161,20 +161,48 @@ public class Homepage {
     }
 
     // Open First Search Result
-    private Page openFirstSearchResult() {
+    private Page openFirstSearchResult(String type) {
 
-        return page.context().waitForPage(() -> {
+    return page.context().waitForPage(() -> {
 
-            Locator firstResult = page.locator("div.imageDiv").first();
+        if (type.equalsIgnoreCase("File")) {
 
-            firstResult.waitFor(new Locator.WaitForOptions()
+            Locator file = page.locator("div.imageDiv").first();
+
+            file.waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE));
 
-            firstResult.dblclick();
-            Allure.step("first file double cliked in search result");
+            file.dblclick();
+            Allure.step("First file double-clicked in search result.");
 
-        });
-    }
+        } else if (type.equalsIgnoreCase("Folder")) {
+
+            Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]").first();
+
+            folder.waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            folder.dblclick();
+            page.waitForLoadState(LoadState.NETWORKIDLE);
+            page.waitForTimeout(3000);
+            Allure.step("First folder double-clicked.");
+
+            Locator fileInsideFolder = page.locator("div.imageDiv").first();
+
+            fileInsideFolder.waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            fileInsideFolder.dblclick();
+            page.waitForLoadState(LoadState.NETWORKIDLE);
+            page.waitForTimeout(3000);
+            Allure.step("First file inside folder double-clicked.");
+        }else{
+            System.out.println("Invalid type provided: " + type);
+            Allure.step("Invalid type provided: " + type);
+        }
+
+    });
+}
 
     // Wait Until Viewer Opens
     private void waitForViewer(Page viewerPage) {
@@ -232,11 +260,11 @@ public class Homepage {
 
     }
 
-    public void search_File_in_SearchBar(String searchTerm) {
+    public void search_File_in_SearchBar(String searchTerm, String type) {
 
-        searchFile(searchTerm);
+        searchFile(searchTerm, type);
 
-        Page viewerPage = openFirstSearchResult();
+        Page viewerPage = openFirstSearchResult(type);
 
         waitForViewer(viewerPage);
 
@@ -258,16 +286,20 @@ public class Homepage {
         System.out.println("Alfadock Logo is visible.");
     }
 
-    private void select_FileType() {
+    private void selectType(String type) {
 
-        page.getByText("File").click();
+        Locator checkbox = page.locator(
+                "//label[text()='" + type + "']/preceding-sibling::div//div[contains(@class,'ui-chkbox-box')]");
 
-    }
+        Locator icon = page.locator(
+                "//label[text()='" + type + "']/preceding-sibling::div//span[contains(@class,'ui-chkbox-icon')]");
 
-    private void select_FolderType() {
-
-        page.getByText("Folder").click();
-
+        if (!icon.getAttribute("class").contains("pi-check")) {
+            checkbox.click();
+            System.out.println(type + " selected.");
+        } else {
+            System.out.println(type + " is already selected.");
+        }
     }
 
 }
