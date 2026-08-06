@@ -163,46 +163,46 @@ public class Homepage {
     // Open First Search Result
     private Page openFirstSearchResult(String type) {
 
-    return page.context().waitForPage(() -> {
+        return page.context().waitForPage(() -> {
 
-        if (type.equalsIgnoreCase("File")) {
+            if (type.equalsIgnoreCase("File")) {
 
-            Locator file = page.locator("div.imageDiv").first();
+                Locator file = page.locator("div.imageDiv").first();
 
-            file.waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE));
+                file.waitFor(new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE));
 
-            file.dblclick();
-            Allure.step("First file double-clicked in search result.");
+                file.dblclick();
+                Allure.step("First file double-clicked in search result.");
 
-        } else if (type.equalsIgnoreCase("Folder")) {
+            } else if (type.equalsIgnoreCase("Folder")) {
 
-            Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]").first();
+                Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]").first();
 
-            folder.waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE));
+                folder.waitFor(new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE));
 
-            folder.dblclick();
-            page.waitForLoadState(LoadState.NETWORKIDLE);
-            page.waitForTimeout(3000);
-            Allure.step("First folder double-clicked.");
+                folder.dblclick();
+                page.waitForLoadState(LoadState.NETWORKIDLE);
+                page.waitForTimeout(3000);
+                Allure.step("First folder double-clicked.");
 
-            Locator fileInsideFolder = page.locator("div.imageDiv").first();
+                Locator fileInsideFolder = page.locator("div.imageDiv").first();
 
-            fileInsideFolder.waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE));
+                fileInsideFolder.waitFor(new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE));
 
-            fileInsideFolder.dblclick();
-            page.waitForLoadState(LoadState.NETWORKIDLE);
-            page.waitForTimeout(3000);
-            Allure.step("First file inside folder double-clicked.");
-        }else{
-            System.out.println("Invalid type provided: " + type);
-            Allure.step("Invalid type provided: " + type);
-        }
+                fileInsideFolder.dblclick();
+                page.waitForLoadState(LoadState.NETWORKIDLE);
+                page.waitForTimeout(3000);
+                Allure.step("First file inside folder double-clicked.");
+            } else {
+                System.out.println("Invalid type provided: " + type);
+                Allure.step("Invalid type provided: " + type);
+            }
 
-    });
-}
+        });
+    }
 
     // Wait Until Viewer Opens
     private void waitForViewer(Page viewerPage) {
@@ -260,25 +260,6 @@ public class Homepage {
 
     }
 
-    public void search_File_in_SearchBar(String searchTerm, String type) {
-
-        searchFile(searchTerm, type);
-
-        Page viewerPage = openFirstSearchResult(type);
-
-        waitForViewer(viewerPage);
-
-        String viewerUrl = viewerPage.url();
-
-        System.out.println("Viewer URL : " + viewerUrl);
-
-        captureViewerScreenshot(viewerPage, searchTerm);
-
-        System.out.println(getViewerName(viewerUrl) + " is opened.");
-
-        returnToHome(viewerPage);
-    }
-
     private void alfadocklogo() {
         Assert.assertTrue(
                 logo.isVisible(),
@@ -300,6 +281,70 @@ public class Homepage {
         } else {
             System.out.println(type + " is already selected.");
         }
+    }
+
+    private void click_First_File() {
+
+        Locator file = page.locator("div.imageDiv").first();
+
+        file.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE));
+
+        file.click();
+        Allure.step("First file clicked in search result.");
+
+    }
+
+    private void click_First_Folder() {
+
+        Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]").first();
+
+        folder.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE));
+
+        folder.click();
+        Allure.step("First folder clicked in search result.");
+
+    }
+
+    public void search_File_in_SearchBar(String searchTerm, String type) {
+
+        searchFile(searchTerm, type);
+
+        Page viewerPage = openFirstSearchResult(type);
+
+        waitForViewer(viewerPage);
+
+        String viewerUrl = viewerPage.url();
+
+        System.out.println("Viewer URL : " + viewerUrl);
+
+        page.waitForTimeout(5000);
+
+        captureViewerScreenshot(viewerPage, searchTerm);
+
+        System.out.println(getViewerName(viewerUrl) + " is opened.");
+
+        returnToHome(viewerPage);
+    }
+
+    public void search_File_Root_Location(String searchTerm, String type) {
+        searchFile(searchTerm, type);
+        searchoptions("Filename");
+        click_First_File();
+        Allure.step("First file clicked in search result.");
+        Assert.assertTrue(page.getByTitle("File Location").isVisible(), "Root icon is not visible.");
+        System.out.println("File Location is visible.");
+        Allure.step("Root icon is visible.");
+        page.getByTitle("File Location").click();
+        page.waitForLoadState(LoadState.NETWORKIDLE);
+        System.out.println("Clicked on Root icon.");
+        Allure.step("Clicked on Root icon.");
+        page.waitForLoadState(LoadState.LOAD);
+        page.waitForTimeout(5000);
+        captureViewerScreenshot(page, searchTerm);
+        alfadocklogo();
+
     }
 
 }

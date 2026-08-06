@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="tests.HomepageTest" time="244.474" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="MS932"/>
+    <property name="java.class.path" value="D:\PlaywrightJava\playwrightjavadock\target\test-classes;D:\PlaywrightJava\playwrightjavadock\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.55.0\playwright-1.55.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.55.0\driver-1.55.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.55.0\driver-bundle-1.55.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\DELL\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire15502173142798205243\surefirebooter-20260806133315859_3.jar C:\Users\DELL\AppData\Local\Temp\surefire15502173142798205243 2026-08-06T13-33-15_456-jvmRun1 surefire-20260806133315859_1tmp surefire_0-20260806133315859_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="HomepageTest"/>
+    <property name="surefire.test.class.path" value="D:\PlaywrightJava\playwrightjavadock\target\test-classes;D:\PlaywrightJava\playwrightjavadock\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.55.0\playwright-1.55.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.55.0\driver-1.55.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.55.0\driver-bundle-1.55.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\DELL\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
+    <property name="allure.results.directory" value="D:\PlaywrightJava\playwrightjavadock\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\PlaywrightJava\playwrightjavadock"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire15502173142798205243\surefirebooter-20260806133315859_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
+    <property name="user.name" value="DELL"/>
+    <property name="stdout.encoding" value="MS932"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="D:\PlaywrightJava\playwrightjavadock"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="MS932"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\DELL\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\DELL\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;&quot;%CLASSPATH%;C:\JUNIT\junit4.10.jar;.;&quot;;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21\bin;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Program Files\Git\cmd;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python314\;C:\Program Files\Java\jdk-11;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\TestProject Agent;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\DELL\AppData\Local\Programs\Antigravity\bin;C:\Users\DELL\AppData\Local\Programs\Ollama;C:\Users\DELL\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\DELL\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="MS932"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.7+8-LTS-245"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="validLoginTest" classname="tests.HomepageTest" time="5.147">
+    <system-out><![CDATA[Company username is: Atkgi
+Company password is: 1234
+Company login button clicked.
+User username is: admin
+User password is: admin
+User login button clicked.
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify_pdf_search" classname="tests.HomepageTest" time="17.225">
+    <system-out><![CDATA[File selected.
+Search completed : .pdf
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/59439417/erp?filename=test20260727.pdf
+Screenshot saved: screenshots/Search_Result_.pdf_20260806_133410.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_a3dasm_search" classname="tests.HomepageTest" time="15.291">
+    <system-out><![CDATA[File selected.
+Search completed : .a3dasm
+Viewer URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/72016757
+Screenshot saved: screenshots/Search_Result_.a3dasm_20260806_133425.png
+3D Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_a3dprt_search" classname="tests.HomepageTest" time="14.127">
+    <system-out><![CDATA[File selected.
+Search completed : .a3dprt
+Viewer URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/72016758
+Screenshot saved: screenshots/Search_Result_.a3dprt_20260806_133439.png
+3D Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_csv_search" classname="tests.HomepageTest" time="12.271">
+    <system-out><![CDATA[File selected.
+Search completed : .csv
+Viewer URL : https://www.alfadock-pack.com/ver10/#/csvviewer/73162449
+Screenshot saved: screenshots/Search_Result_.csv_20260806_133452.png
+CSV Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_dxf_search" classname="tests.HomepageTest" time="12.772">
+    <system-out><![CDATA[File selected.
+Search completed : .dxf
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/73162448/file?filename=H-16WC018A401.dxf
+Screenshot saved: screenshots/Search_Result_.dxf_20260806_133504.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_dwg_search" classname="tests.HomepageTest" time="12.185">
+    <system-out><![CDATA[File selected.
+Search completed : .dwg
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/68377339/file?filename=Sample1-Sheet_1.dwg
+Screenshot saved: screenshots/Search_Result_.dwg_20260806_133517.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_docx_search" classname="tests.HomepageTest" time="14.747">
+    <system-out><![CDATA[File selected.
+Search completed : .docx
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/49461596/office?filename=AT-TestDOCX_1.docx
+Screenshot saved: screenshots/Search_Result_.docx_20260806_133531.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_pptx_search" classname="tests.HomepageTest" time="11.877">
+    <system-out><![CDATA[File selected.
+Search completed : .pptx
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/72737853/file?filename=%E5%B1%B1%E5%B2%B8%E5%B7%A5%E6%A5%AD%E4%BB%95%E6%A7%98%E6%9B%B8260312.pptx
+Screenshot saved: screenshots/Search_Result_.pptx_20260806_133543.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_jpg_search" classname="tests.HomepageTest" time="14.098">
+    <system-out><![CDATA[File selected.
+Search completed : .jpg
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/294444/camera?filename=%E5%A4%96%E9%83%A8%E3%83%9B%E3%82%99%E3%83%83%E3%82%AF%E3%82%B9%E4%B8%AD%E6%9D%BF123.jpg
+Screenshot saved: screenshots/Search_Result_.jpg_20260806_133557.png
+Drawing Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_png_search" classname="tests.HomepageTest" time="13.793">
+    <system-out><![CDATA[File selected.
+Search completed : .png
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/9711/camera?filename=.png
+Screenshot saved: screenshots/Search_Result_.png_20260806_133611.png
+Drawing Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_xlsx_search" classname="tests.HomepageTest" time="16.074">
+    <system-out><![CDATA[File selected.
+Search completed : .xlsx
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/72016761/file?filename=BOM-2002201Z75.xlsx
+Screenshot saved: screenshots/Search_Result_.xlsx_20260806_133627.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_tiff_search" classname="tests.HomepageTest" time="14.417">
+    <system-out><![CDATA[File selected.
+Search completed : .tiff
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/66546223/file?filename=TKGweldtest-1.tiff.pdf
+Screenshot saved: screenshots/Search_Result_.tiff_20260806_133641.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_folder_search" classname="tests.HomepageTest" time="20.249">
+    <system-out><![CDATA[Folder selected.
+Search completed : test
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/72088928/file
+Screenshot saved: screenshots/Search_Result_test_20260806_133702.png
+Drawing Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="search_Root_Location_File" classname="tests.HomepageTest" time="16.861">
+    <system-out><![CDATA[File selected.
+Search completed : .pdf
+Not all search options are checked. Current states - Filename: false, Attributes: false, Content: false
+Filename option selected..
+File Location is visible.
+Clicked on Root icon.
+Screenshot saved: screenshots/Search_Result_.pdf_20260806_133719.png
+Alfadock Logo is visible.
+]]></system-out>
+  </testcase>
+</testsuite>

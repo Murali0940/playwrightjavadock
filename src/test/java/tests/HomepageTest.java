@@ -106,8 +106,10 @@ public class HomepageTest extends BaseDriver {
 		new Homepage(page).search_File_in_SearchBar("test", "Folder");
 	}
 
-	
+	@Test(priority = 15, description = "search_File_Root_Location")
+	public void search_Root_Location_File() {
 
-	
+		new Homepage(page).search_File_Root_Location(".pdf", "File");
+	}
 
 }
