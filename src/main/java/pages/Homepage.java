@@ -147,10 +147,11 @@ public class Homepage {
         searchInput.click();
         searchInput.fill(searchTerm);
         Allure.step("Test entered in search bar");
+        Allure.step("Test entered in search bar.");
 
         page.getByText("ui-btn").click();
         selectType(type);
-        Allure.step("Type is selected");
+        Allure.step("Type is selected.");
 
         clickSearchButton();
 
