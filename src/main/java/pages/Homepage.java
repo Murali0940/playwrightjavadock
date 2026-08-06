@@ -146,7 +146,6 @@ public class Homepage {
 
         searchInput.click();
         searchInput.fill(searchTerm);
-        Allure.step("Test entered in search bar");
         Allure.step("Test entered in search bar.");
 
         page.getByText("ui-btn").click();
