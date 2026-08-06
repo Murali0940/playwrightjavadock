@@ -10,9 +10,9 @@ import pages.Homepage;
 import pages.UserLoginPage;
 import utils.ConfigReader;
 
-public class Rough extends BaseDriver{
+public class Rough extends BaseDriver {
 
-    @Test(priority = 1, description = "Verify login with valid Company and User credentials..")
+	@Test(priority = 1, description = "Verify login with valid Company and User credentials..")
 	public void validLoginTest() {
 
 		Locator languageDropdown = page.locator("#mySelect");
@@ -28,16 +28,10 @@ public class Rough extends BaseDriver{
 
 	}
 
-    @Test(priority = 2, description = "Verify_pdf_search")
-	public void Verify_pdf_search() {
+	@Test(priority = 2, description = "search_File_Root_Location")
+	public void search_Root_Location_File() {
 
-		new Homepage(page).search_File_in_SearchBar(".pdf", "File");
+		new Homepage(page).search_File_Root_Location(".pdf", "File");
 	}
 
-    @Test(priority = 3, description = "Verify_folder_search")
-	public void Verify_folder_search() {
-
-		new Homepage(page).search_File_in_SearchBar("test", "Folder");
-	}
-    
 }
