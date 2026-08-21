@@ -29,7 +29,7 @@ jobs:
         run: mvn test-compile
 
       - name: Install Playwright browsers
-        run: mvn exec:java `-Dexec.mainClass=com.microsoft.playwright.CLI` `-Dexec.args=install`
+        run: mvn exec:java "-Dexec.mainClass=com.microsoft.playwright.CLI" "-Dexec.args=install"
 
       - name: Run TestNG tests
         run: mvn clean test
