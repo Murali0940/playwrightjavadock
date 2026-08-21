@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>smoke Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 30 23:41:57 IST 2026</td>
+<td>Started on:</td><td>Fri Aug 07 11:39:17 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>255 seconds (255847 ms)</td>
+<tr><td>Total time:</td><td>366 seconds (366527 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,695 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.HomepageTest.Verify_pptx_search()'><b>Verify_pptx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_pptx_search</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForEventWithTimeout(BrowserContextImpl.java:245)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPageImpl(BrowserContextImpl.java:257)
+	at com.microsoft.playwright.impl.BrowserContextImpl.lambda$waitForPage$0(BrowserContextImpl.java:250)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPage(BrowserContextImpl.java:250)
+	at com.microsoft.playwright.BrowserContext.waitForPage(BrowserContext.java:1627)
+	at pages.Homepage.openFirstSearchResult(Homepage.java:131)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:303)
+	at tests.HomepageTest.Verify_pptx_search(HomepageTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1455177644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1455177644'><pre>com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForEventWithTimeout(BrowserContextImpl.java:245)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPageImpl(BrowserContextImpl.java:257)
+	at com.microsoft.playwright.impl.BrowserContextImpl.lambda$waitForPage$0(BrowserContextImpl.java:250)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
+	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPage(BrowserContextImpl.java:250)
+	at com.microsoft.playwright.BrowserContext.waitForPage(BrowserContext.java:1627)
+	at pages.Homepage.openFirstSearchResult(Homepage.java:131)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:303)
+	at tests.HomepageTest.Verify_pptx_search(HomepageTest.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>32</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_png_search()'><b>Verify_png_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_png_search</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:109)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
+	at tests.HomepageTest.Verify_png_search(HomepageTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace918899286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918899286'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:109)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
+	at tests.HomepageTest.Verify_png_search(HomepageTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+</pre></div></td>
+<td>30</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_jpg_search()'><b>Verify_jpg_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_jpg_search</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:109)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
+	at tests.HomepageTest.Verify_jpg_search(HomepageTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1937693946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1937693946'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:109)
+	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
+	at tests.HomepageTest.Verify_jpg_search(HomepageTest.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;Search&quot;)
+-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+</pre></div></td>
+<td>30</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.ValidLoginTestCases.validLoginTest()'><b>validLoginTest</b><br>Test class: loginTestCases.ValidLoginTestCases<br>Test method: Verify login with valid Company and User credentials</td>
+<td><div><pre>java.lang.AssertionError: Expected title to contain &apos;https://www.alfadock-pack.com/userlogin.html&apos; but found &apos;https://www.alfadock-pack.com/ver10/#/home&apos; expected [true] but found [false]
+	at pages.UserLoginPage.verifyPageURL(UserLoginPage.java:70)
+	at loginTestCases.ValidLoginTestCases.validLoginTest(ValidLoginTestCases.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917935693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917935693'><pre>java.lang.AssertionError: Expected title to contain &apos;https://www.alfadock-pack.com/userlogin.html&apos; but found &apos;https://www.alfadock-pack.com/ver10/#/home&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at pages.UserLoginPage.verifyPageURL(UserLoginPage.java:70)
+	at loginTestCases.ValidLoginTestCases.validLoginTest(ValidLoginTestCases.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>5</td>
+<td>loginTestCases.ValidLoginTestCases@273444fe</td></tr>
+<tr>
+<td title='tests.HomepageTest.search_Root_Location_Folder()'><b>search_Root_Location_Folder</b><br>Test class: tests.HomepageTest<br>Test method: search_Folder_Root_Location</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for getByText(&quot;ui-btn&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:114)
+	at pages.Homepage.search_File_Root_Location(Homepage.java:333)
+	at tests.HomepageTest.search_Root_Location_Folder(HomepageTest.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for getByText(&quot;ui-btn&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace773238925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace773238925'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for getByText(&quot;ui-btn&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.Homepage.searchFile(Homepage.java:114)
+	at pages.Homepage.search_File_Root_Location(Homepage.java:333)
+	at tests.HomepageTest.search_Root_Location_Folder(HomepageTest.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))
+    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for getByText(&quot;ui-btn&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 39 more
+</pre></div></td>
+<td>1</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,120 +765,110 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.HomepageTest.Verify_dwg_search()'><b>Verify_dwg_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_dwg_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_empty_username_and_empty_password()'><b>Verify_login_with_empty_username_and_empty_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_wrong_username_and_empty_password</td>
-<td></td>
-<td>2</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_empty_username_and_wrong_password()'><b>Verify_login_with_empty_username_and_wrong_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_empty_username_and_wrong_password</td>
-<td></td>
-<td>2</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_invalid_username_and_valid_password()'><b>Verify_Userlogin_with_invalid_username_and_valid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_invalid_username_and_valid_password</td>
-<td></td>
-<td>4</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_userlogin_with_invalid_username_and_invalid_password()'><b>Verify_userlogin_with_invalid_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_userlogin_with_wrong_username_and_wrong_password</td>
-<td></td>
-<td>4</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_valid_username_and_invalid_password()'><b>Verify_Userlogin_with_valid_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_valid_username_and_invalid_password</td>
-<td></td>
-<td>4</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_tiff_search()'><b>Verify_tiff_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_tiff_search</td>
-<td></td>
-<td>15</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_xlsx_search()'><b>Verify_xlsx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_xlsx_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='loginTestCases.ValidLoginTestCases.validLoginTest()'><b>validLoginTest</b><br>Test class: loginTestCases.ValidLoginTestCases<br>Test method: Verify login with valid Company and User credentials</td>
-<td></td>
-<td>3</td>
-<td>loginTestCases.ValidLoginTestCases@2cb4893b</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_a3dprt_search()'><b>Verify_a3dprt_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_a3dprt_search</td>
-<td></td>
-<td>15</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_docx_search()'><b>Verify_docx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_docx_search</td>
-<td></td>
-<td>15</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
 <td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_wrong_username_and_empty_password()'><b>Verify_login_with_wrong_username_and_empty_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_wrong_username_and_empty_password</td>
 <td></td>
 <td>2</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
 <tr>
-<td title='tests.HomepageTest.validLoginTest()'><b>validLoginTest</b><br>Test class: tests.HomepageTest<br>Test method: Verify login with valid Company and User credentials..</td>
-<td></td>
-<td>4</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_jpg_search()'><b>Verify_jpg_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_jpg_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_invalid_username_and_empty_password()'><b>Verify_Userlogin_with_invalid_username_and_empty_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_invalid_username_and_empty_password</td>
-<td></td>
-<td>4</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_a3dasm_search()'><b>Verify_a3dasm_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_a3dasm_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_empty_username_and_invalid_password()'><b>Verify_Userlogin_with_empty_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_empty_username_and_invalid_password</td>
-<td></td>
-<td>4</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_pdf_search()'><b>Verify_pdf_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_pdf_search</td>
+<td title='tests.HomepageTest.Verify_docx_search()'><b>Verify_docx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_docx_search</td>
 <td></td>
 <td>18</td>
-<td>tests.HomepageTest@273444fe</td></tr>
+<td>tests.HomepageTest@4681c175</td></tr>
 <tr>
-<td title='tests.HomepageTest.Verify_dxf_search()'><b>Verify_dxf_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_dxf_search</td>
+<td title='tests.HomepageTest.Verify_folder_search()'><b>Verify_folder_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_folder_search</td>
 <td></td>
-<td>15</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_csv_search()'><b>Verify_csv_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_csv_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
-<tr>
-<td title='tests.HomepageTest.Verify_png_search()'><b>Verify_png_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_png_search</td>
-<td></td>
-<td>16</td>
-<td>tests.HomepageTest@273444fe</td></tr>
+<td>18</td>
+<td>tests.HomepageTest@4681c175</td></tr>
 <tr>
 <td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_invalid_Username_and_Password()'><b>Verify_login_with_invalid_Username_and_Password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_invalid_Company_and_User_credentials</td>
 <td></td>
 <td>2</td>
-<td>loginTestCases.InvalidLoginTestCases@16eb3ea3</td></tr>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
 <tr>
-<td title='tests.HomepageTest.Verify_pptx_search()'><b>Verify_pptx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_pptx_search</td>
+<td title='tests.HomepageTest.Verify_csv_search()'><b>Verify_csv_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_csv_search</td>
 <td></td>
-<td>15</td>
-<td>tests.HomepageTest@273444fe</td></tr>
+<td>12</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_empty_username_and_wrong_password()'><b>Verify_login_with_empty_username_and_wrong_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_empty_username_and_wrong_password</td>
+<td></td>
+<td>2</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.validLoginTest()'><b>validLoginTest</b><br>Test class: tests.HomepageTest<br>Test method: Verify login with valid Company and User credentials..</td>
+<td></td>
+<td>3</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_a3dprt_search()'><b>Verify_a3dprt_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_a3dprt_search</td>
+<td></td>
+<td>12</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_xlsx_search()'><b>Verify_xlsx_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_xlsx_search</td>
+<td></td>
+<td>37</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_empty_username_and_invalid_password()'><b>Verify_Userlogin_with_empty_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_empty_username_and_invalid_password</td>
+<td></td>
+<td>4</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_pdf_search()'><b>Verify_pdf_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_pdf_search</td>
+<td></td>
+<td>21</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_userlogin_with_invalid_username_and_invalid_password()'><b>Verify_userlogin_with_invalid_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_userlogin_with_wrong_username_and_wrong_password</td>
+<td></td>
+<td>5</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_a3dasm_search()'><b>Verify_a3dasm_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_a3dasm_search</td>
+<td></td>
+<td>12</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_login_with_empty_username_and_empty_password()'><b>Verify_login_with_empty_username_and_empty_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_login_with_wrong_username_and_empty_password</td>
+<td></td>
+<td>2</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.search_Root_Location_File()'><b>search_Root_Location_File</b><br>Test class: tests.HomepageTest<br>Test method: search_File_Root_Location</td>
+<td></td>
+<td>22</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_invalid_username_and_empty_password()'><b>Verify_Userlogin_with_invalid_username_and_empty_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_invalid_username_and_empty_password</td>
+<td></td>
+<td>4</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_dwg_search()'><b>Verify_dwg_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_dwg_search</td>
+<td></td>
+<td>13</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_invalid_username_and_valid_password()'><b>Verify_Userlogin_with_invalid_username_and_valid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_invalid_username_and_valid_password</td>
+<td></td>
+<td>4</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_tiff_search()'><b>Verify_tiff_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_tiff_search</td>
+<td></td>
+<td>11</td>
+<td>tests.HomepageTest@4681c175</td></tr>
+<tr>
+<td title='loginTestCases.InvalidLoginTestCases.Verify_Userlogin_with_valid_username_and_invalid_password()'><b>Verify_Userlogin_with_valid_username_and_invalid_password</b><br>Test class: loginTestCases.InvalidLoginTestCases<br>Test method: Verify_Userlogin_with_valid_username_and_invalid_password</td>
+<td></td>
+<td>4</td>
+<td>loginTestCases.InvalidLoginTestCases@353352b6</td></tr>
+<tr>
+<td title='tests.HomepageTest.Verify_dxf_search()'><b>Verify_dxf_search</b><br>Test class: tests.HomepageTest<br>Test method: Verify_dxf_search</td>
+<td></td>
+<td>23</td>
+<td>tests.HomepageTest@4681c175</td></tr>
 </table><p>
 </body>
 </html>

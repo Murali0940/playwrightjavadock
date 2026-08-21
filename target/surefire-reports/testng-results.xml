@@ -1,81 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-06T13:33:18 IST" name="Surefire suite" finished-at="2026-08-06T13:37:21 IST" duration-ms="242580">
+  <suite started-at="2026-08-07T16:28:06 IST" name="Surefire suite" finished-at="2026-08-07T16:28:44 IST" duration-ms="37676">
     <groups>
     </groups>
-    <test started-at="2026-08-06T13:33:18 IST" name="Surefire test" finished-at="2026-08-06T13:37:21 IST" duration-ms="242580">
-      <class name="tests.HomepageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:33:18 IST" name="setup" finished-at="2026-08-06T13:33:49 IST" duration-ms="30438" status="PASS">
+    <test started-at="2026-08-07T16:28:06 IST" name="Surefire test" finished-at="2026-08-07T16:28:44 IST" duration-ms="37676">
+      <class name="routinecheck5S.OakSystemDrawTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:routinecheck5S.OakSystemDrawTest@3cebbb30]" started-at="2026-08-07T16:28:06 IST" name="setup" finished-at="2026-08-07T16:28:24 IST" duration-ms="18301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:1, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:33:49 IST" name="validLoginTest" description="Verify login with valid Company and User credentials.." finished-at="2026-08-06T13:33:54 IST" duration-ms="4840" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:routinecheck5S.OakSystemDrawTest@3cebbb30]" started-at="2026-08-07T16:28:24 IST" name="validLoginTest" description="Verify login with valid Company and User credentials" finished-at="2026-08-07T16:28:29 IST" duration-ms="4383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method signature="Verify_pdf_search()[pri:2, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:33:54 IST" name="Verify_pdf_search" description="Verify_pdf_search" finished-at="2026-08-06T13:34:11 IST" duration-ms="17202" status="PASS">
+        <test-method signature="validatingDrawSocketTest()[pri:2, instance:routinecheck5S.OakSystemDrawTest@3cebbb30]" started-at="2026-08-07T16:28:29 IST" name="validatingDrawSocketTest" description="validatingDrawSocketTest" finished-at="2026-08-07T16:28:43 IST" duration-ms="14299" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_pdf_search -->
-        <test-method signature="Verify_a3dasm_search()[pri:3, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:34:11 IST" name="Verify_a3dasm_search" description="Verify_a3dasm_search" finished-at="2026-08-06T13:34:26 IST" duration-ms="15282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_a3dasm_search -->
-        <test-method signature="Verify_a3dprt_search()[pri:4, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:34:26 IST" name="Verify_a3dprt_search" description="Verify_a3dprt_search" finished-at="2026-08-06T13:34:41 IST" duration-ms="14116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_a3dprt_search -->
-        <test-method signature="Verify_csv_search()[pri:5, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:34:41 IST" name="Verify_csv_search" description="Verify_csv_search" finished-at="2026-08-06T13:34:53 IST" duration-ms="12261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_csv_search -->
-        <test-method signature="Verify_dxf_search()[pri:6, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:34:53 IST" name="Verify_dxf_search" description="Verify_dxf_search" finished-at="2026-08-06T13:35:06 IST" duration-ms="12760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_dxf_search -->
-        <test-method signature="Verify_dwg_search()[pri:7, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:35:06 IST" name="Verify_dwg_search" description="Verify_dwg_search" finished-at="2026-08-06T13:35:18 IST" duration-ms="12177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_dwg_search -->
-        <test-method signature="Verify_docx_search()[pri:8, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:35:18 IST" name="Verify_docx_search" description="Verify_docx_search" finished-at="2026-08-06T13:35:33 IST" duration-ms="14738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_docx_search -->
-        <test-method signature="Verify_pptx_search()[pri:9, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:35:33 IST" name="Verify_pptx_search" description="Verify_pptx_search" finished-at="2026-08-06T13:35:44 IST" duration-ms="11870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_pptx_search -->
-        <test-method signature="Verify_jpg_search()[pri:10, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:35:44 IST" name="Verify_jpg_search" description="Verify_jpg_search" finished-at="2026-08-06T13:35:58 IST" duration-ms="14088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_jpg_search -->
-        <test-method signature="Verify_png_search()[pri:11, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:35:59 IST" name="Verify_png_search" description="Verify_png_search" finished-at="2026-08-06T13:36:12 IST" duration-ms="13782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_png_search -->
-        <test-method signature="Verify_xlsx_search()[pri:12, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:36:12 IST" name="Verify_xlsx_search" description="Verify_xlsx_search" finished-at="2026-08-06T13:36:28 IST" duration-ms="16062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_xlsx_search -->
-        <test-method signature="Verify_tiff_search()[pri:13, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:36:28 IST" name="Verify_tiff_search" description="Verify_tiff_search" finished-at="2026-08-06T13:36:43 IST" duration-ms="14402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_tiff_search -->
-        <test-method signature="Verify_folder_search()[pri:14, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:36:43 IST" name="Verify_folder_search" description="Verify_folder_search" finished-at="2026-08-06T13:37:03 IST" duration-ms="20236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_folder_search -->
-        <test-method signature="search_Root_Location_File()[pri:15, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:37:03 IST" name="search_Root_Location_File" description="search_File_Root_Location" finished-at="2026-08-06T13:37:20 IST" duration-ms="16858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search_Root_Location_File -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomepageTest@82de64a]" started-at="2026-08-06T13:37:20 IST" name="teardown" finished-at="2026-08-06T13:37:21 IST" duration-ms="802" status="PASS">
+        </test-method> <!-- validatingDrawSocketTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:routinecheck5S.OakSystemDrawTest@3cebbb30]" started-at="2026-08-07T16:28:43 IST" name="teardown" finished-at="2026-08-07T16:28:44 IST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- tests.HomepageTest -->
+      </class> <!-- routinecheck5S.OakSystemDrawTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
