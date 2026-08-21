@@ -25,9 +25,15 @@ jobs:
       - name: Check Maven
         run: mvn -version
 
+      - name: Compile test classes
+        run: mvn test-compile
+
       - name: Install Playwright browsers
         shell: pwsh
-        run: mvn exec:java "-Dexec.mainClass=com.microsoft.playwright.CLI" "-Dexec.args=install"
+        run: |
+          mvn -q dependency:build-classpath -Dmdep.outputFile=cp.txt -Dmdep.includeScope=test
+          $classpath = Get-Content cp.txt
+          java -cp "target\classes;target\test-classes;$classpath" com.microsoft.playwright.CLI install
 
       - name: Run TestNG tests
         run: mvn clean test
