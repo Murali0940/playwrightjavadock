@@ -10,12 +10,12 @@ jobs:
     steps:
 
       - name: Checkout source code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: maven
 
@@ -29,8 +29,7 @@ jobs:
         run: mvn test-compile
 
       - name: Install Playwright browsers
-        shell: cmd
-        run: mvn exec:java "-Dexec.mainClass=com.microsoft.playwright.CLI" "-Dexec.args=install"
+        run: mvn exec:java `-Dexec.mainClass=com.microsoft.playwright.CLI` `-Dexec.args=install`
 
       - name: Run TestNG tests
         run: mvn clean test
