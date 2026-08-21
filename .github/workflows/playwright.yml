@@ -25,18 +25,18 @@ jobs:
       - name: Check Maven
         run: mvn -version
 
-      - name: Compile test classes
+      - name: Compile project
         run: mvn test-compile
 
       - name: Install Playwright browsers
         shell: pwsh
         run: |
-          mvn -q dependency:build-classpath -Dmdep.outputFile=cp.txt -Dmdep.includeScope=test
+          mvn -q dependency:build-classpath "-Dmdep.outputFile=cp.txt" "-Dmdep.includeScope=test"
           $classpath = Get-Content cp.txt
           java -cp "target\classes;target\test-classes;$classpath" com.microsoft.playwright.CLI install
 
       - name: Run TestNG tests
-        run: mvn clean test
+        run: mvn test
 
       - name: Upload Allure Results
         if: always()
