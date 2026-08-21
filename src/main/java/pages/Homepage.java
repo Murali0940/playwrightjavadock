@@ -1,5 +1,8 @@
 package pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.testng.Assert;
 
 import com.microsoft.playwright.Locator;
@@ -13,6 +16,7 @@ import base.BaseDriver;
 public class Homepage {
 
     private Page page;
+    private static final Logger logger = LogManager.getLogger(Homepage.class);
 
     // Locators
 
@@ -41,8 +45,11 @@ public class Homepage {
             attribute.uncheck();
             content.uncheck();
             System.out.println("All search options unchecked.");
+            logger.info("All search options unchecked.");
         } else {
             System.out.println("Not all search options are checked. Current states - Filename: " + filename.isChecked()
+                    + ", Attributes: " + attribute.isChecked() + ", Content: " + content.isChecked());
+            logger.info("Not all search options are checked. Current states - Filename: " + filename.isChecked()
                     + ", Attributes: " + attribute.isChecked() + ", Content: " + content.isChecked());
         }
 
@@ -52,8 +59,10 @@ public class Homepage {
                     attribute.uncheck();
                     content.uncheck();
                     System.out.println("Filename option selected..");
+                    logger.info("Filename option selected..");
                 } else {
                     System.out.println("Filename option is already selected..");
+                    logger.info("Filename option is already selected..");
                 }
                 break;
             case "attributes":
@@ -61,8 +70,10 @@ public class Homepage {
                     filename.uncheck();
                     content.uncheck();
                     System.out.println("Attributes option selected.");
+                    logger.info("Attributes option selected.");
                 } else {
                     System.out.println("Attributes option is already selected.");
+                    logger.info("Attributes option is already selected.");
                 }
                 break;
             case "content":
@@ -70,67 +81,18 @@ public class Homepage {
                     filename.uncheck();
                     attribute.uncheck();
                     System.out.println("Content option selected.");
+                    logger.info("Content option selected.");
                 } else {
                     System.out.println("Content option is already selected.");
+                    logger.info("Content option is already selected.");
                 }
                 break;
             default:
                 System.out.println("Invalid search option: " + option);
+                logger.warn("Invalid search option: " + option);
         }
 
     }
-
-    // PDF_Search_in_SearchBar
-
-    // public void search_File_in_SearchBar(String searchTerm) {
-
-    // Locator alfaDockLogo = page.locator("//img[contains(@src,'logo.png')]");
-
-    // searchInput.click();
-    // searchInput.fill(searchTerm);
-    // page.getByText("ui-btn").click();
-    // searchoptions("Filename");
-    // page.waitForTimeout(3000);
-    // page.locator("//img[@src='assets/ai-search.png']").click();
-    // System.out.println("Search term entered: " + searchTerm);
-    // page.waitForLoadState(LoadState.LOAD);
-    // System.out.println("Page loaded after search.");
-    // Page newPage = page.context().waitForPage(() -> {
-    // page.locator("div.imageDiv").first().dblclick();
-    // System.out.println("First search result opened.");
-    // });
-    // // Switches to the new tab automatically
-    // newPage.waitForLoadState(LoadState.LOAD);
-
-    // String newTabUrl = newPage.url();
-
-    // System.out.println("New Tab URL : " + newTabUrl);
-
-    // page.waitForTimeout(8000);
-
-    // if (newTabUrl.contains("pdfviewer")) {
-    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-    // System.out.println("PDF Viewer is opened.");
-    // } else if (newTabUrl.contains("a3dviewer")) {
-    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-    // System.out.println("3D Viewer is opened.");
-    // } else if (newTabUrl.contains("csvviewer")) {
-    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-    // System.out.println("CSV Viewer is opened.");
-    // } else if (newTabUrl.contains("drawing")) {
-    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-    // System.out.println("Drawing Viewer is opened.");
-    // } else {
-    // BaseDriver.takeScreenshot(newPage, "Search_Result_" + searchTerm);
-    // System.out.println("File is not opened in any viewer.");
-    // }
-
-    // newPage.close();
-    // alfadocklogo();
-    // alfaDockLogo.click();
-    // System.out.println("Returned to Home page.");
-
-    // }
 
     // Click Search Button
     private void clickSearchButton() {
@@ -147,10 +109,12 @@ public class Homepage {
         searchInput.click();
         searchInput.fill(searchTerm);
         Allure.step("Test entered in search bar.");
+        logger.info("Test entered in search bar.");
 
         page.getByText("ui-btn").click();
         selectType(type);
         Allure.step("Type is selected.");
+        logger.info("Type is selected.");
 
         clickSearchButton();
 
@@ -158,6 +122,7 @@ public class Homepage {
 
         System.out.println("Search completed : " + searchTerm);
         Allure.step("Search completed : " + searchTerm);
+        logger.info("Search completed : " + searchTerm);
     }
 
     // Open First Search Result
@@ -174,6 +139,7 @@ public class Homepage {
 
                 file.dblclick();
                 Allure.step("First file double-clicked in search result.");
+                logger.info("First file double-clicked in search result.");
 
             } else if (type.equalsIgnoreCase("Folder")) {
 
@@ -186,6 +152,7 @@ public class Homepage {
                 page.waitForLoadState(LoadState.NETWORKIDLE);
                 page.waitForTimeout(3000);
                 Allure.step("First folder double-clicked.");
+                logger.info("First folder double-clicked.");
 
                 Locator fileInsideFolder = page.locator("div.imageDiv").first();
 
@@ -196,8 +163,10 @@ public class Homepage {
                 page.waitForLoadState(LoadState.NETWORKIDLE);
                 page.waitForTimeout(3000);
                 Allure.step("First file inside folder double-clicked.");
+                logger.info("First file inside folder double-clicked.");
             } else {
                 System.out.println("Invalid type provided: " + type);
+                logger.warn("Invalid type provided: " + type);
                 Allure.step("Invalid type provided: " + type);
             }
 
@@ -210,6 +179,7 @@ public class Homepage {
         viewerPage.waitForLoadState(LoadState.DOMCONTENTLOADED);
         viewerPage.waitForLoadState(LoadState.NETWORKIDLE);
         Allure.step("waiting for viewer");
+        logger.info("waiting for viewer");
 
     }
 
@@ -219,6 +189,7 @@ public class Homepage {
         BaseDriver.takeScreenshot(viewerPage, "Search_Result_" + searchTerm);
 
         Allure.step("screenshot captured");
+        logger.info("screenshot captured");
 
     }
 
@@ -257,6 +228,7 @@ public class Homepage {
 
         System.out.println("Returned to Home page.");
         Allure.step("return to homepage");
+        logger.info("Returned to Home page.");
 
     }
 
@@ -265,6 +237,8 @@ public class Homepage {
                 logo.isVisible(),
                 "Alfadock logo is not visible on the Home page.");
         System.out.println("Alfadock Logo is visible.");
+        Allure.step("Alfadock Logo is visible.");
+        logger.info("Alfadock Logo is visible.");
     }
 
     private void selectType(String type) {
@@ -278,12 +252,18 @@ public class Homepage {
         if (!icon.getAttribute("class").contains("pi-check")) {
             checkbox.click();
             System.out.println(type + " selected.");
+            Allure.step(type + " selected.");
+            logger.info(type + " selected.");
         } else {
             System.out.println(type + " is already selected.");
+            Allure.step(type + " is already selected.");
+            logger.info(type + " is already selected.");
         }
     }
 
     private void click_First_File() {
+
+        page.waitForLoadState();
 
         Locator file = page.locator("div.imageDiv").first();
 
@@ -292,22 +272,31 @@ public class Homepage {
 
         file.click();
         Allure.step("First file clicked in search result.");
+        logger.info("First file clicked in search result.");
 
     }
 
     private void click_First_Folder() {
 
-        Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]").first();
+        Locator folder = page.locator("div.imageDivSmall").first();
 
         folder.waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE));
 
         folder.click();
         Allure.step("First folder clicked in search result.");
-
+        logger.info("First folder clicked in search result.");
     }
 
     public void search_File_in_SearchBar(String searchTerm, String type) {
+
+        String methodName = Thread.currentThread()
+                .getStackTrace()[2]
+                .getMethodName();
+
+        System.out.println(methodName);
+        Allure.step("Executing search_File_in_SearchBar method.");
+        logger.info("Executing search_File_in_SearchBar method.");
 
         searchFile(searchTerm, type);
 
@@ -318,32 +307,94 @@ public class Homepage {
         String viewerUrl = viewerPage.url();
 
         System.out.println("Viewer URL : " + viewerUrl);
+        Allure.step("Viewer URL : " + viewerUrl);
+        logger.info("Viewer URL : " + viewerUrl);
 
         page.waitForTimeout(5000);
 
         captureViewerScreenshot(viewerPage, searchTerm);
 
         System.out.println(getViewerName(viewerUrl) + " is opened.");
+        Allure.step(getViewerName(viewerUrl) + " is opened.");
+        logger.info(getViewerName(viewerUrl) + " is opened.");
 
         returnToHome(viewerPage);
     }
 
-    public void search_File_Root_Location(String searchTerm, String type) {
-        searchFile(searchTerm, type);
+    public void search_File_Root_Location(String searchTerm, String filetype) {
+        String methodName = Thread.currentThread()
+                .getStackTrace()[2]
+                .getMethodName();
+
+        System.out.println(methodName);
+        Allure.step("Executing search_File_Root_Location method.");
+        logger.info("Executing search_File_Root_Location method.");
+
+        searchFile(searchTerm, filetype);
         searchoptions("Filename");
+        System.out.println("Search Term : " + searchTerm);
+        System.out.println("Type : " + filetype);
+
         click_First_File();
+
         Allure.step("First file clicked in search result.");
+        logger.info("First file clicked in search result.");
         Assert.assertTrue(page.getByTitle("File Location").isVisible(), "Root icon is not visible.");
         System.out.println("File Location is visible.");
         Allure.step("Root icon is visible.");
+        logger.info("Root icon is visible.");
+
         page.getByTitle("File Location").click();
         page.waitForLoadState(LoadState.NETWORKIDLE);
+
         System.out.println("Clicked on Root icon.");
         Allure.step("Clicked on Root icon.");
-        page.waitForLoadState(LoadState.LOAD);
+        logger.info("Clicked on Root icon.");
         page.waitForTimeout(5000);
+
         captureViewerScreenshot(page, searchTerm);
         alfadocklogo();
+        page.waitForLoadState();
+
+    }
+
+    public void search_Folder_Root_Location(String searchTerm, String filetype) {
+        String methodName = Thread.currentThread()
+                .getStackTrace()[2]
+                .getMethodName();
+
+        System.out.println(methodName);
+        Allure.step("Executing search_Folder_Root_Location method.");
+        logger.info("Executing search_Folder_Root_Location method.");
+
+        searchFile(searchTerm, filetype);
+        searchoptions("Filename");
+        click_First_Folder();
+        page.waitForLoadState();
+        click_First_File();
+
+        Allure.step("First folder clicked in search result.");
+        logger.info("First folder clicked in search result.");
+        Assert.assertTrue(page.getByTitle("File Location").isVisible(), "Root icon is not visible.");
+        System.out.println("File Location is visible.");
+        Allure.step("Root icon is visible.");
+        logger.info("Root icon is visible.");
+
+        page.getByTitle("File Location").click();
+        page.waitForLoadState(LoadState.NETWORKIDLE);
+
+        System.out.println("Clicked on Root icon.");
+        Allure.step("Clicked on Root icon..");
+        logger.info("Clicked on Root icon..");
+
+        page.locator("(//div[@class='imageDiv' or @class='imageDivSmall'])[1]")
+                .waitFor(new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE));
+
+        captureViewerScreenshot(page, searchTerm);
+        page.waitForTimeout(2000);
+        alfadocklogo();
+        page.waitForLoadState();
 
     }
 

@@ -112,4 +112,10 @@ public class HomepageTest extends BaseDriver {
 		new Homepage(page).search_File_Root_Location(".pdf", "File");
 	}
 
+	@Test(priority = 16, description = "search_Folder_Root_Location")
+	public void search_Root_Location_Folder() {
+
+		new Homepage(page).search_File_Root_Location(".pdf", "Folder");
+	}
+
 }

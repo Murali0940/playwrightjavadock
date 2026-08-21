@@ -3,6 +3,7 @@ package base;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -29,9 +30,10 @@ public class BaseDriver {
 
                         .setHeadless(Boolean.parseBoolean(ConfigReader.get("headless")))
 
-                        .setSlowMo(Double.parseDouble(ConfigReader.get("slowmo"))));
+                        .setSlowMo(Double.parseDouble(ConfigReader.get("slowmo")))
+                        .setArgs(Arrays.asList("--start-maximized")));
 
-        context = browser.newContext();
+        context = browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
 
         page = context.newPage();
 
