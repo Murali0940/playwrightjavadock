@@ -1,6 +1,5 @@
 pages\UserLoginPage.class
+utils\ConfigReader.class
 pages\CompLoginPage.class
-fivesservice\Oaksystem.class
 pages\Homepage.class
 base\BaseDriver.class
-utils\ConfigReader.class

@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
@@ -106,6 +107,8 @@ public class Homepage {
 
     private void searchFile(String searchTerm, String type) {
 
+        page.waitForTimeout(3000);
+
         searchInput.click();
         searchInput.fill(searchTerm);
         Allure.step("Test entered in search bar.");
@@ -138,6 +141,9 @@ public class Homepage {
                         .setState(WaitForSelectorState.VISIBLE));
 
                 file.dblclick();
+
+                handlePasswordDialogIfPresent();
+
                 Allure.step("First file double-clicked in search result.");
                 logger.info("First file double-clicked in search result.");
 
@@ -160,6 +166,7 @@ public class Homepage {
                         .setState(WaitForSelectorState.VISIBLE));
 
                 fileInsideFolder.dblclick();
+                handlePasswordDialogIfPresent();
                 page.waitForLoadState(LoadState.NETWORKIDLE);
                 page.waitForTimeout(3000);
                 Allure.step("First file inside folder double-clicked.");
@@ -171,6 +178,53 @@ public class Homepage {
             }
 
         });
+    }
+
+    private void handlePasswordDialogIfPresent() {
+
+        Locator passwordDialog = page.locator("div.ui-dialog")
+                .filter(new Locator.FilterOptions()
+                        .setHasText("Enter password"));
+
+        // Dialog is not present
+        if (passwordDialog.count() == 0 || !passwordDialog.first().isVisible()) {
+            logger.info("No password lock detected. Continuing...");
+            return;
+        }
+
+        logger.info("Password-protected file/folder detected.");
+
+        Allure.step("Password dialog detected.");
+
+        Locator dialog = passwordDialog.first();
+
+        // Wait for password textbox
+        Locator passwordInput = dialog.getByRole(AriaRole.TEXTBOX);
+
+        passwordInput.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE));
+
+        passwordInput.fill("1234");
+
+        logger.info("Password entered.");
+
+        // Click OK inside THIS dialog
+        Locator okButton = dialog.getByRole(
+                AriaRole.BUTTON,
+                new Locator.GetByRoleOptions().setName("OK"));
+
+        okButton.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE));
+
+        okButton.click();
+
+        Allure.step("Password entered and OK clicked.");
+
+        // Wait until dialog disappears
+        dialog.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.HIDDEN));
+
+        logger.info("Password dialog closed successfully.");
     }
 
     // Wait Until Viewer Opens

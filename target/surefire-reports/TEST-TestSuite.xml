@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="367.341" tests="26" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="314.638" tests="26" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire15307898950932984761\surefirebooter-20260807113916447_3.jar C:\Users\DELL\AppData\Local\Temp\surefire15307898950932984761 2026-08-07T11-39-16_282-jvmRun1 surefire-20260807113916447_1tmp surefire_0-20260807113916447_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire14308676275006256468\surefirebooter-20260821155546423_3.jar C:\Users\DELL\AppData\Local\Temp\surefire14308676275006256468 2026-08-21T15-55-46_290-jvmRun1 surefire-20260821155546423_1tmp surefire_0-20260821155546423_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\PlaywrightJava\playwrightjavadock\target\test-classes;D:\PlaywrightJava\playwrightjavadock\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.55.0\playwright-1.55.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.55.0\driver-1.55.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.55.0\driver-bundle-1.55.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\DELL\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;"/>
     <property name="allure.results.directory" value="D:\PlaywrightJava\playwrightjavadock\target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire15307898950932984761\surefirebooter-20260807113916447_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire14308676275006256468\surefirebooter-20260821155546423_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="MS932"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\DELL\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\DELL\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;&quot;%CLASSPATH%;C:\JUNIT\junit4.10.jar;.;&quot;;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21\bin;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Program Files\Git\cmd;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python314\;C:\Program Files\Java\jdk-11;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\TestProject Agent;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\DELL\AppData\Local\Programs\Antigravity\bin;C:\Users\DELL\AppData\Local\Programs\Ollama;C:\Users\DELL\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\DELL\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;&quot;%CLASSPATH%;C:\JUNIT\junit4.10.jar;.;&quot;;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21\bin;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Program Files\Git\cmd;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python314\;C:\Program Files\Java\jdk-11;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\TestProject Agent;C:\Maven\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;C:\Users\DELL\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\DELL\AppData\Local\Programs\Antigravity\bin;C:\Users\DELL\AppData\Local\Programs\Ollama;C:\Users\DELL\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\DELL\.antigravity-ide\extensions\vscjava.vscode-java-debug-0.59.0-universal\bundled\scripts\noConfigScripts;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="MS932"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -59,514 +59,222 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="validLoginTest" classname="loginTestCases.ValidLoginTestCases" time="5.991">
-    <failure message="Expected title to contain &apos;https://www.alfadock-pack.com/userlogin.html&apos; but found &apos;https://www.alfadock-pack.com/ver10/#/home&apos; expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected title to contain 'https://www.alfadock-pack.com/userlogin.html' but found 'https://www.alfadock-pack.com/ver10/#/home' expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at pages.UserLoginPage.verifyPageURL(UserLoginPage.java:70)
-	at loginTestCases.ValidLoginTestCases.validLoginTest(ValidLoginTestCases.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="validLoginTest" classname="loginTestCases.ValidLoginTestCases" time="7.581">
     <system-out><![CDATA[Company username is: testpro
 Company password is: testpro
 Company login button clicked.
-Actual URL is: https://www.alfadock-pack.com/ver10/#/home
+Current URL: https://www.alfadock-pack.com/ver10/#/home
+userlogin page URL is incorrect.
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_login_with_invalid_Username_and_Password" classname="loginTestCases.InvalidLoginTestCases" time="2.513">
+  <testcase name="Verify_login_with_invalid_Username_and_Password" classname="loginTestCases.InvalidLoginTestCases" time="2.487">
     <system-out><![CDATA[Company username is: atkgi
 Company password is: 1224
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_login_with_empty_username_and_wrong_password" classname="loginTestCases.InvalidLoginTestCases" time="2.226">
+  <testcase name="Verify_login_with_empty_username_and_wrong_password" classname="loginTestCases.InvalidLoginTestCases" time="2.255">
     <system-out><![CDATA[Company username is: 
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_login_with_wrong_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.257">
+  <testcase name="Verify_login_with_wrong_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.181">
     <system-out><![CDATA[Company username is: 
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_login_with_empty_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.256">
+  <testcase name="Verify_login_with_empty_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="2.187">
     <system-out><![CDATA[Company username is: 
 Company password is: 
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_userlogin_with_invalid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="5.315">
+  <testcase name="Verify_userlogin_with_invalid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.989">
     <system-out><![CDATA[Company username is: Atkgi
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_Userlogin_with_valid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.635">
+  <testcase name="Verify_Userlogin_with_valid_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.648">
     <system-out><![CDATA[Company username is: Atkgi
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_Userlogin_with_invalid_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="4.443">
+  <testcase name="Verify_Userlogin_with_invalid_username_and_empty_password" classname="loginTestCases.InvalidLoginTestCases" time="4.337">
     <system-out><![CDATA[Company username is: Atkgi
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_Userlogin_with_invalid_username_and_valid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.616">
+  <testcase name="Verify_Userlogin_with_invalid_username_and_valid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.529">
     <system-out><![CDATA[Company username is: Atkgi
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_Userlogin_with_empty_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.37">
+  <testcase name="Verify_Userlogin_with_empty_username_and_invalid_password" classname="loginTestCases.InvalidLoginTestCases" time="4.33">
     <system-out><![CDATA[Company username is: Atkgi
 Company password is: 1234
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="validLoginTest" classname="tests.HomepageTest" time="3.995">
+  <testcase name="validLoginTest" classname="tests.HomepageTest" time="4.226">
     <system-out><![CDATA[Company username is: testpro
 Company password is: testpro
 Company login button clicked.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_pdf_search" classname="tests.HomepageTest" time="21.555">
+  <testcase name="Verify_pdf_search" classname="tests.HomepageTest" time="23.337">
     <system-out><![CDATA[Verify_pdf_search
 File selected.
 Search completed : .pdf
 Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/67569288/file?filename=TestPrimo123.pdf
-Screenshot saved: screenshots/Search_Result_.pdf_20260807_114043.png
+Screenshot saved: screenshots/Search_Result_.pdf_20260821_155721.png
 PDF Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_a3dasm_search" classname="tests.HomepageTest" time="12.57">
+  <testcase name="Verify_a3dasm_search" classname="tests.HomepageTest" time="16.526">
     <system-out><![CDATA[Verify_a3dasm_search
 File selected.
 Search completed : .a3dasm
 Viewer URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/71637747
-Screenshot saved: screenshots/Search_Result_.a3dasm_20260807_114056.png
+Screenshot saved: screenshots/Search_Result_.a3dasm_20260821_155737.png
 3D Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_a3dprt_search" classname="tests.HomepageTest" time="12.341">
+  <testcase name="Verify_a3dprt_search" classname="tests.HomepageTest" time="14.886">
     <system-out><![CDATA[Verify_a3dprt_search
 File selected.
 Search completed : .a3dprt
 Viewer URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/71639653
-Screenshot saved: screenshots/Search_Result_.a3dprt_20260807_114108.png
+Screenshot saved: screenshots/Search_Result_.a3dprt_20260821_155752.png
 3D Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_csv_search" classname="tests.HomepageTest" time="12.189">
+  <testcase name="Verify_csv_search" classname="tests.HomepageTest" time="14.135">
     <system-out><![CDATA[Verify_csv_search
 File selected.
 Search completed : .csv
 Viewer URL : https://www.alfadock-pack.com/ver10/#/csvviewer/71637770
-Screenshot saved: screenshots/Search_Result_.csv_20260807_114121.png
+Screenshot saved: screenshots/Search_Result_.csv_20260821_155807.png
 CSV Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_dxf_search" classname="tests.HomepageTest" time="23.56">
+  <testcase name="Verify_dxf_search" classname="tests.HomepageTest" time="14.403">
     <system-out><![CDATA[Verify_dxf_search
 File selected.
 Search completed : .dxf
 Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/71637772/file?filename=AP44027-597-1-2-RPA.dxf
-Screenshot saved: screenshots/Search_Result_.dxf_20260807_114144.png
+Screenshot saved: screenshots/Search_Result_.dxf_20260821_155821.png
 PDF Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_dwg_search" classname="tests.HomepageTest" time="13.301">
+  <testcase name="Verify_dwg_search" classname="tests.HomepageTest" time="14.272">
     <system-out><![CDATA[Verify_dwg_search
 File selected.
 Search completed : .dwg
 Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/67569298/file?filename=AT-Testdwg.dwg
-Screenshot saved: screenshots/Search_Result_.dwg_20260807_114157.png
+Screenshot saved: screenshots/Search_Result_.dwg_20260821_155835.png
 PDF Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_docx_search" classname="tests.HomepageTest" time="18.795">
+  <testcase name="Verify_docx_search" classname="tests.HomepageTest" time="14.171">
     <system-out><![CDATA[Verify_docx_search
 File selected.
 Search completed : .docx
 Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/67681923/file?filename=Backup%20(1).docx
-Screenshot saved: screenshots/Search_Result_.docx_20260807_114216.png
+Screenshot saved: screenshots/Search_Result_.docx_20260821_155849.png
 PDF Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_pptx_search" classname="tests.HomepageTest" time="32.783">
-    <failure message="Timeout 30000ms exceeded" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
-	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
-	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.BrowserContextImpl.waitForEventWithTimeout(BrowserContextImpl.java:245)
-	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPageImpl(BrowserContextImpl.java:257)
-	at com.microsoft.playwright.impl.BrowserContextImpl.lambda$waitForPage$0(BrowserContextImpl.java:250)
-	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
-	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
-	at com.microsoft.playwright.impl.BrowserContextImpl.waitForPage(BrowserContextImpl.java:250)
-	at com.microsoft.playwright.BrowserContext.waitForPage(BrowserContext.java:1627)
-	at pages.Homepage.openFirstSearchResult(Homepage.java:131)
-	at pages.Homepage.search_File_in_SearchBar(Homepage.java:303)
-	at tests.HomepageTest.Verify_pptx_search(HomepageTest.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="Verify_pptx_search" classname="tests.HomepageTest" time="20.131">
     <system-out><![CDATA[Verify_pptx_search
 File selected.
 Search completed : .pptx
-]]></system-out>
-  </testcase>
-  <testcase name="Verify_jpg_search" classname="tests.HomepageTest" time="30.578">
-    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)&#10;    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)&#10;}&#10;Call log:&#10;-   - waiting for getByPlaceholder(&quot;Search&quot;)&#10;-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;&#10;-   - attempting click action&#10;-     2 × waiting for element to be visible, enabled and stable&#10;-       - element is visible, enabled and stable&#10;-       - scrolling into view if needed&#10;-       - done scrolling&#10;-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-     - retrying click action&#10;-     - waiting 20ms&#10;-     2 × waiting for element to be visible, enabled and stable&#10;-       - element is visible, enabled and stable&#10;-       - scrolling into view if needed&#10;-       - done scrolling&#10;-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-     - retrying click action&#10;-       - waiting 100ms&#10;-     56 × waiting for element to be visible, enabled and stable&#10;-        - element is visible, enabled and stable&#10;-        - scrolling into view if needed&#10;-        - done scrolling&#10;-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-      - retrying click action&#10;-        - waiting 500ms&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for getByPlaceholder("Search")
--     - locator resolved to <input readonly type="text" pinputtext="" autocomplete="off" _ngcontent-nce-c1="" placeholder="Search" onfocus="this.removeAttribute('readonly');" ontouchstart="this.removeAttribute('readonly');" class="ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled"/>
--   - attempting click action
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--     - waiting 20ms
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
--        - element is visible, enabled and stable
--        - scrolling into view if needed
--        - done scrolling
--        - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--      - retrying click action
--        - waiting 500ms
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
-	at com.microsoft.playwright.Locator.click(Locator.java:2500)
-	at pages.Homepage.searchFile(Homepage.java:109)
-	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
-	at tests.HomepageTest.Verify_jpg_search(HomepageTest.java:82)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for getByPlaceholder("Search")
--     - locator resolved to <input readonly type="text" pinputtext="" autocomplete="off" _ngcontent-nce-c1="" placeholder="Search" onfocus="this.removeAttribute('readonly');" ontouchstart="this.removeAttribute('readonly');" class="ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled"/>
--   - attempting click action
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--     - waiting 20ms
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
--        - element is visible, enabled and stable
--        - scrolling into view if needed
--        - done scrolling
--        - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--      - retrying click action
--        - waiting 500ms
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 39 more
-]]></failure>
-    <system-out><![CDATA[Verify_jpg_search
-]]></system-out>
-  </testcase>
-  <testcase name="Verify_png_search" classname="tests.HomepageTest" time="30.546">
-    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)&#10;    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)&#10;}&#10;Call log:&#10;-   - waiting for getByPlaceholder(&quot;Search&quot;)&#10;-     - locator resolved to &lt;input readonly type=&quot;text&quot; pinputtext=&quot;&quot; autocomplete=&quot;off&quot; _ngcontent-nce-c1=&quot;&quot; placeholder=&quot;Search&quot; onfocus=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; ontouchstart=&quot;this.removeAttribute(&apos;readonly&apos;);&quot; class=&quot;ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled&quot;/&gt;&#10;-   - attempting click action&#10;-     2 × waiting for element to be visible, enabled and stable&#10;-       - element is visible, enabled and stable&#10;-       - scrolling into view if needed&#10;-       - done scrolling&#10;-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-     - retrying click action&#10;-     - waiting 20ms&#10;-     2 × waiting for element to be visible, enabled and stable&#10;-       - element is visible, enabled and stable&#10;-       - scrolling into view if needed&#10;-       - done scrolling&#10;-       - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-     - retrying click action&#10;-       - waiting 100ms&#10;-     56 × waiting for element to be visible, enabled and stable&#10;-        - element is visible, enabled and stable&#10;-        - scrolling into view if needed&#10;-        - done scrolling&#10;-        - &lt;div class=&quot;ui-widget-overlay ui-dialog-mask&quot;&gt;&lt;/div&gt; intercepts pointer events&#10;-      - retrying click action&#10;-        - waiting 500ms&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for getByPlaceholder("Search")
--     - locator resolved to <input readonly type="text" pinputtext="" autocomplete="off" _ngcontent-nce-c1="" placeholder="Search" onfocus="this.removeAttribute('readonly');" ontouchstart="this.removeAttribute('readonly');" class="ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled"/>
--   - attempting click action
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--     - waiting 20ms
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
--        - element is visible, enabled and stable
--        - scrolling into view if needed
--        - done scrolling
--        - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--      - retrying click action
--        - waiting 500ms
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
-	at com.microsoft.playwright.Locator.click(Locator.java:2500)
-	at pages.Homepage.searchFile(Homepage.java:109)
-	at pages.Homepage.search_File_in_SearchBar(Homepage.java:301)
-	at tests.HomepageTest.Verify_png_search(HomepageTest.java:88)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for getByPlaceholder("Search")
--     - locator resolved to <input readonly type="text" pinputtext="" autocomplete="off" _ngcontent-nce-c1="" placeholder="Search" onfocus="this.removeAttribute('readonly');" ontouchstart="this.removeAttribute('readonly');" class="ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ui-state-filled"/>
--   - attempting click action
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--     - waiting 20ms
--     2 × waiting for element to be visible, enabled and stable
--       - element is visible, enabled and stable
--       - scrolling into view if needed
--       - done scrolling
--       - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--     - retrying click action
--       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
--        - element is visible, enabled and stable
--        - scrolling into view if needed
--        - done scrolling
--        - <div class="ui-widget-overlay ui-dialog-mask"></div> intercepts pointer events
--      - retrying click action
--        - waiting 500ms
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 39 more
-]]></failure>
-    <system-out><![CDATA[Verify_png_search
-]]></system-out>
-  </testcase>
-  <testcase name="Verify_xlsx_search" classname="tests.HomepageTest" time="37.901">
-    <system-out><![CDATA[Verify_xlsx_search
-File selected.
-Search completed : .xlsx
-Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/57332161/office?filename=GPN_Android_TestReport_21112025.xlsx
-Screenshot saved: screenshots/Search_Result_.xlsx_20260807_114428.png
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/59572900/office?filename=PRIMO-MES_FixNote_15072026%201.pptx
+Screenshot saved: screenshots/Search_Result_.pptx_20260821_155909.png
 PDF Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_tiff_search" classname="tests.HomepageTest" time="11.756">
-    <system-out><![CDATA[Verify_tiff_search
+  <testcase name="Verify_jpg_search" classname="tests.HomepageTest" time="15.326">
+    <system-out><![CDATA[Verify_jpg_search
 File selected.
-Search completed : .tiff
-Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/67569282/file?filename=AT-TestTIFF.tiff
-Screenshot saved: screenshots/Search_Result_.tiff_20260807_114440.png
+Search completed : .jpg
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/72000751/file?filename=test3_1.jpg
+Screenshot saved: screenshots/Search_Result_.jpg_20260821_155925.png
 Drawing Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="Verify_folder_search" classname="tests.HomepageTest" time="18.516">
+  <testcase name="Verify_png_search" classname="tests.HomepageTest" time="14.563">
+    <system-out><![CDATA[Verify_png_search
+File selected.
+Search completed : .png
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/59582975/office?filename=logo.png
+Screenshot saved: screenshots/Search_Result_.png_20260821_155939.png
+Drawing Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_xlsx_search" classname="tests.HomepageTest" time="14.799">
+    <system-out><![CDATA[Verify_xlsx_search
+File selected.
+Search completed : .xlsx
+Viewer URL : https://www.alfadock-pack.com/ver10/#/pdfviewer/57332161/office?filename=GPN_Android_TestReport_21112025.xlsx
+Screenshot saved: screenshots/Search_Result_.xlsx_20260821_155954.png
+PDF Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_tiff_search" classname="tests.HomepageTest" time="14.505">
+    <system-out><![CDATA[Verify_tiff_search
+File selected.
+Search completed : .tiff
+Viewer URL : https://www.alfadock-pack.com/ver10/#/drawing/67569282/file?filename=AT-TestTIFF.tiff
+Screenshot saved: screenshots/Search_Result_.tiff_20260821_160009.png
+Drawing Viewer is opened.
+Alfadock Logo is visible.
+Returned to Home page.
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_folder_search" classname="tests.HomepageTest" time="20.445">
     <system-out><![CDATA[Verify_folder_search
 Folder selected.
 Search completed : test
 Viewer URL : https://www.alfadock-pack.com/a3dviewer/#/viewer/60698221?userid=510
-Screenshot saved: screenshots/Search_Result_test_20260807_114457.png
+Screenshot saved: screenshots/Search_Result_test_20260821_160028.png
 3D Viewer is opened.
 Alfadock Logo is visible.
 Returned to Home page.
 ]]></system-out>
   </testcase>
-  <testcase name="search_Root_Location_File" classname="tests.HomepageTest" time="22.275">
+  <testcase name="search_Root_Location_File" classname="tests.HomepageTest" time="25.73">
     <system-out><![CDATA[search_Root_Location_File
 File selected.
 Search completed : .pdf
@@ -576,12 +284,12 @@ Search Term : .pdf
 Type : File
 File Location is visible.
 Clicked on Root icon.
-Screenshot saved: screenshots/Search_Result_.pdf_20260807_114521.png
+Screenshot saved: screenshots/Search_Result_.pdf_20260821_160056.png
 Alfadock Logo is visible.
 ]]></system-out>
   </testcase>
-  <testcase name="search_Root_Location_Folder" classname="tests.HomepageTest" time="1.709">
-    <failure message="Error {&#10;  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:&#10;    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))&#10;    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)&#10;&#10;  name=&apos;Error&#10;  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:&#10;    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))&#10;    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)&#10;&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)&#10;    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)&#10;    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22&#10;    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)&#10;    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)&#10;    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)&#10;    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)&#10;    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)&#10;    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)&#10;}&#10;Call log:&#10;-   - waiting for getByText(&quot;ui-btn&quot;)&#10;" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+  <testcase name="search_Root_Location_Folder" classname="tests.HomepageTest" time="4.651">
+    <failure message="Error {&#10;  message=&apos;Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:&#10;    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))&#10;    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)&#10;&#10;  name=&apos;Error&#10;  stack=&apos;Error: Error: strict mode violation: getByText(&quot;ui-btn&quot;) resolved to 2 elements:&#10;    1) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;ui-btn&quot;))&#10;    2) &lt;span class=&quot;ui-button-text ui-clickable&quot;&gt;ui-btn&lt;/span&gt; aka locator(&quot;p-calendar&quot;).getByText(&quot;ui-btn&quot;)&#10;&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)&#10;    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)&#10;    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22&#10;    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)&#10;    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)&#10;    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)&#10;    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)&#10;    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)&#10;    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)&#10;}&#10;Call log:&#10;-   - waiting for getByText(&quot;ui-btn&quot;)&#10;" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
 Error {
   message='Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
     1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
@@ -592,16 +300,16 @@ Error {
     1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
     2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
 
-    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
-    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
-    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
-    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)
 }
 Call log:
 -   - waiting for getByText("ui-btn")
@@ -614,8 +322,8 @@ Call log:
 	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
 	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
 	at com.microsoft.playwright.Locator.click(Locator.java:2500)
-	at pages.Homepage.searchFile(Homepage.java:114)
-	at pages.Homepage.search_File_Root_Location(Homepage.java:333)
+	at pages.Homepage.searchFile(Homepage.java:116)
+	at pages.Homepage.search_File_Root_Location(Homepage.java:335)
 	at tests.HomepageTest.search_Root_Location_Folder(HomepageTest.java:118)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -657,16 +365,16 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
     1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
     2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
 
-    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\chromium\crExecutionContext.js:80:13)
-    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\javascript.js:217:12)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:910:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:880:24)
-    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\frames.js:953:27)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\frameDispatcher.js:117:12)
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\progress.js:78:22)
-    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:95:14)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1539214475558037058\package\lib\server\dispatchers\dispatcher.js:329:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)
+    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)
 }
 Call log:
 -   - waiting for getByText("ui-btn")

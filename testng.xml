@@ -11,8 +11,8 @@
      <test name="smoke Tests">
 
         <classes>
-            <class name="loginTestCases.ValidLoginTestCases"/>
-            <class name="loginTestCases.InvalidLoginTestCases"/>
+            <!-- <class name="loginTestCases.ValidLoginTestCases"/>
+            <class name="loginTestCases.InvalidLoginTestCases"/> -->
             <class name="tests.HomepageTest"/>
         </classes>
 

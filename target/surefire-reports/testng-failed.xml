@@ -6,21 +6,11 @@
   </listeners>
   <test thread-count="5" name="smoke Tests(failed)" verbose="0">
     <classes>
-      <class name="loginTestCases.ValidLoginTestCases">
-        <methods>
-          <include name="validLoginTest"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- loginTestCases.ValidLoginTestCases -->
       <class name="tests.HomepageTest">
         <methods>
           <include name="setup"/>
           <include name="search_Root_Location_Folder"/>
-          <include name="Verify_png_search"/>
           <include name="teardown"/>
-          <include name="Verify_jpg_search"/>
-          <include name="Verify_pptx_search"/>
         </methods>
       </class> <!-- tests.HomepageTest -->
     </classes>
