@@ -319,7 +319,7 @@ public class Homepage {
 
         page.waitForLoadState();
 
-        Locator file = page.locator("div.imageDiv").first();
+        Locator file = page.locator("(//div[@class='imageDiv'])[1]");
 
         file.waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE));
@@ -332,11 +332,10 @@ public class Homepage {
 
     private void click_First_Folder() {
 
-        Locator folder = page.locator("div.imageDivSmall").first();
+        Locator folder = page.locator("(//div[@class='imageDivSmall'])[1]");
 
         folder.waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE));
-
         folder.click();
         Allure.step("First folder clicked in search result.");
         logger.info("First folder clicked in search result.");
@@ -413,43 +412,131 @@ public class Homepage {
     }
 
     public void search_Folder_Root_Location(String searchTerm, String filetype) {
-        String methodName = Thread.currentThread()
-                .getStackTrace()[2]
-                .getMethodName();
 
-        System.out.println(methodName);
-        Allure.step("Executing search_Folder_Root_Location method.");
-        logger.info("Executing search_Folder_Root_Location method.");
+        // ---------------------------------------------------------
+        // Method Name
+        // ---------------------------------------------------------
+        String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
 
+        System.out.println("Executing method: " + methodName);
+
+        Allure.step("Executing " + methodName + " method.");
+        logger.info("Executing {} method.", methodName);
+
+        // ---------------------------------------------------------
+        // Step 1: Search File / Folder
+        // ---------------------------------------------------------
         searchFile(searchTerm, filetype);
+
+        Allure.step("Searched for: " + searchTerm);
+        logger.info("Searched for: {}", searchTerm);
+
+        // ---------------------------------------------------------
+        // Step 2: Select Filename Search Option
+        // ---------------------------------------------------------
         searchoptions("Filename");
+
+        Allure.step("Selected search option: Filename");
+        logger.info("Selected search option: Filename");
+
+        // ---------------------------------------------------------
+        // Step 3: Click First Folder
+        // ---------------------------------------------------------
         click_First_Folder();
-        page.waitForLoadState();
-        click_First_File();
 
         Allure.step("First folder clicked in search result.");
         logger.info("First folder clicked in search result.");
-        Assert.assertTrue(page.getByTitle("File Location").isVisible(), "Root icon is not visible.");
-        System.out.println("File Location is visible.");
-        Allure.step("Root icon is visible.");
-        logger.info("Root icon is visible.");
 
-        page.getByTitle("File Location").click();
-        page.waitForLoadState(LoadState.NETWORKIDLE);
+        // ---------------------------------------------------------
+        // Step 4: Locate Root / File Location Icon
+        // ---------------------------------------------------------
+        Locator rootIcon = page.locator("img[src='assets/go-to-location.png']");
 
-        System.out.println("Clicked on Root icon.");
-        Allure.step("Clicked on Root icon..");
-        logger.info("Clicked on Root icon..");
+        // ---------------------------------------------------------
+        // Step 5: Wait for Root Icon
+        // ---------------------------------------------------------
+        rootIcon.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
 
-        page.locator("(//div[@class='imageDiv' or @class='imageDivSmall'])[1]")
-                .waitFor(new Locator.WaitForOptions()
-                        .setState(WaitForSelectorState.VISIBLE));
+        Assert.assertTrue(rootIcon.isVisible(), "Root/File Location icon is not visible.");
 
+        System.out.println("Root/File Location icon is visible.");
+
+        Allure.step("Root/File Location icon is visible.");
+        logger.info("Root/File Location icon is visible.");
+
+        // ---------------------------------------------------------
+        // Step 6: Scroll Root Icon into View
+        // ---------------------------------------------------------
+        rootIcon.scrollIntoViewIfNeeded();
+
+        Allure.step("Root/File Location icon scrolled into view.");
+        logger.info("Root/File Location icon scrolled into view.");
+
+        // ---------------------------------------------------------
+        // Step 7: Verify Root Icon is Enabled
+        // ---------------------------------------------------------
+        Assert.assertTrue(
+                rootIcon.isEnabled(),
+                "Root/File Location icon is not enabled.");
+
+        logger.info("Root/File Location icon is enabled.");
+
+        // ---------------------------------------------------------
+        // Step 8: Click Root / File Location Icon
+        // ---------------------------------------------------------
+        Allure.step("Clicking Root/File Location icon.");
+        logger.info("Clicking Root/File Location icon.");
+
+        rootIcon.click(new Locator.ClickOptions()
+                .setTimeout(15000));
+
+        System.out.println("Clicked on Root/File Location icon.");
+
+        Allure.step("Root/File Location icon clicked successfully.");
+        logger.info("Root/File Location icon clicked successfully.");
+
+        // ---------------------------------------------------------
+        // Step 9: Locate Viewer
+        // ---------------------------------------------------------
+        Locator viewer = page.locator(
+                "div.imageDiv, div.imageDivSmall").first();
+
+        // ---------------------------------------------------------
+        // Step 10: Wait for Viewer to Become Visible
+        // ---------------------------------------------------------
+        viewer.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+
+        Assert.assertTrue(viewer.isVisible(), "Viewer is not visible after clicking Root/File Location icon.");
+
+        System.out.println("Viewer is visible.");
+
+        Allure.step("Viewer is visible.");
+        logger.info("Viewer is visible.");
+
+        // ---------------------------------------------------------
+        // Step 11: Capture Viewer Screenshot
+        // ---------------------------------------------------------
         captureViewerScreenshot(page, searchTerm);
-        page.waitForTimeout(2000);
-        alfadocklogo();
-        page.waitForLoadState();
 
+        Allure.step("Viewer screenshot captured for: " + searchTerm);
+        logger.info("Viewer screenshot captured for: {}", searchTerm);
+
+        // ---------------------------------------------------------
+        // Step 12: Continue to AlfaDock
+        // ---------------------------------------------------------
+        alfadocklogo();
+
+        Allure.step("AlfaDock logo operation completed.");
+        logger.info("AlfaDock logo operation completed.");
+
+        // ---------------------------------------------------------
+        // Step 13: Final Log
+        // ---------------------------------------------------------
+        System.out.println("search_Folder_Root_Location completed successfully.");
+
+        Allure.step("search_Folder_Root_Location completed successfully.");
+
+        logger.info("search_Folder_Root_Location completed successfully.");
     }
 
 }
