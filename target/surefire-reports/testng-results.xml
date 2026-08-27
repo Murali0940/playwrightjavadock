@@ -1,139 +1,1119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
+<testng-results ignored="0" total="16" passed="2" failed="14" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-21T15:55:47 IST" name="Playwright Test Suite" finished-at="2026-08-21T16:01:01 IST" duration-ms="313836">
+  <suite started-at="2026-08-27T16:15:28 IST" name="Playwright Test Suite" finished-at="2026-08-27T16:16:31 IST" duration-ms="62497">
     <groups>
     </groups>
-    <test started-at="2026-08-21T15:55:47 IST" name="smoke Tests" finished-at="2026-08-21T16:01:01 IST" duration-ms="313836">
+    <test started-at="2026-08-27T16:15:28 IST" name="smoke Tests" finished-at="2026-08-27T16:16:31 IST" duration-ms="62497">
       <class name="tests.HomepageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:56:51 IST" name="setup" finished-at="2026-08-21T15:56:54 IST" duration-ms="3074" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:15:28 IST" name="setup" finished-at="2026-08-27T16:15:49 IST" duration-ms="20105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:1, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:56:54 IST" name="validLoginTest" description="Verify login with valid Company and User credentials.." finished-at="2026-08-21T15:56:58 IST" duration-ms="4225" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:15:49 IST" name="validLoginTest" description="Verify login with valid Company and User credentials.." finished-at="2026-08-27T16:15:54 IST" duration-ms="5252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method signature="Verify_pdf_search()[pri:2, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:56:58 IST" name="Verify_pdf_search" description="Verify_pdf_search" finished-at="2026-08-21T15:57:22 IST" duration-ms="23330" status="PASS">
+        <test-method signature="Verify_pdf_search()[pri:2, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:15:54 IST" name="Verify_pdf_search" description="Verify_pdf_search" finished-at="2026-08-27T16:16:18 IST" duration-ms="24388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_pdf_search -->
-        <test-method signature="Verify_a3dasm_search()[pri:3, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:57:22 IST" name="Verify_a3dasm_search" description="Verify_a3dasm_search" finished-at="2026-08-21T15:57:38 IST" duration-ms="16515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_a3dasm_search -->
-        <test-method signature="Verify_a3dprt_search()[pri:4, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:57:38 IST" name="Verify_a3dprt_search" description="Verify_a3dprt_search" finished-at="2026-08-21T15:57:53 IST" duration-ms="14875" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_a3dprt_search -->
-        <test-method signature="Verify_csv_search()[pri:5, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:57:53 IST" name="Verify_csv_search" description="Verify_csv_search" finished-at="2026-08-21T15:58:07 IST" duration-ms="14129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_csv_search -->
-        <test-method signature="Verify_dxf_search()[pri:6, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:58:07 IST" name="Verify_dxf_search" description="Verify_dxf_search" finished-at="2026-08-21T15:58:22 IST" duration-ms="14396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_dxf_search -->
-        <test-method signature="Verify_dwg_search()[pri:7, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:58:22 IST" name="Verify_dwg_search" description="Verify_dwg_search" finished-at="2026-08-21T15:58:36 IST" duration-ms="14259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_dwg_search -->
-        <test-method signature="Verify_docx_search()[pri:8, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:58:36 IST" name="Verify_docx_search" description="Verify_docx_search" finished-at="2026-08-21T15:58:50 IST" duration-ms="14166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_docx_search -->
-        <test-method signature="Verify_pptx_search()[pri:9, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:58:50 IST" name="Verify_pptx_search" description="Verify_pptx_search" finished-at="2026-08-21T15:59:10 IST" duration-ms="20128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_pptx_search -->
-        <test-method signature="Verify_jpg_search()[pri:10, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:59:10 IST" name="Verify_jpg_search" description="Verify_jpg_search" finished-at="2026-08-21T15:59:26 IST" duration-ms="15324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_jpg_search -->
-        <test-method signature="Verify_png_search()[pri:11, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:59:26 IST" name="Verify_png_search" description="Verify_png_search" finished-at="2026-08-21T15:59:40 IST" duration-ms="14561" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_png_search -->
-        <test-method signature="Verify_xlsx_search()[pri:12, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:59:40 IST" name="Verify_xlsx_search" description="Verify_xlsx_search" finished-at="2026-08-21T15:59:55 IST" duration-ms="14783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_xlsx_search -->
-        <test-method signature="Verify_tiff_search()[pri:13, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T15:59:55 IST" name="Verify_tiff_search" description="Verify_tiff_search" finished-at="2026-08-21T16:00:10 IST" duration-ms="14500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_tiff_search -->
-        <test-method signature="Verify_folder_search()[pri:14, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T16:00:10 IST" name="Verify_folder_search" description="Verify_folder_search" finished-at="2026-08-21T16:00:30 IST" duration-ms="20444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_folder_search -->
-        <test-method signature="search_Root_Location_File()[pri:15, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T16:00:30 IST" name="search_Root_Location_File" description="search_File_Root_Location" finished-at="2026-08-21T16:00:56 IST" duration-ms="25728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search_Root_Location_File -->
-        <test-method signature="search_Root_Location_Folder()[pri:16, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T16:00:56 IST" name="search_Root_Location_Folder" description="search_Folder_Root_Location" finished-at="2026-08-21T16:01:00 IST" duration-ms="4641" status="FAIL">
-          <exception class="com.microsoft.playwright.PlaywrightException">
+        <test-method signature="Verify_a3dasm_search()[pri:3, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:18 IST" name="Verify_a3dasm_search" description="Verify_a3dasm_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="11950" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
             <message>
               <![CDATA[Error {
-  message='Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)
-    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)
-    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)
-    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)
-}
-Call log:
--   - waiting for getByText("ui-btn")
-]]>
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:518:28)
+    at Page._didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\page.js:172:10)
+    at CRPage.didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crPage.js:135:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crBrowser.js:183:14)
+    at CRSession.emit (node:events:518:28)
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crConnection.js:138:14
+}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)
-    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)
-    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)
-    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:518:28)
+    at Page._didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\page.js:172:10)
+    at CRPage.didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crPage.js:135:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crBrowser.js:183:14)
+    at CRSession.emit (node:events:518:28)
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crConnection.js:138:14
 }
-Call log:
--   - waiting for getByText("ui-btn")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
 at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
 at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
-at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
-at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
-at com.microsoft.playwright.Locator.click(Locator.java:2500)
-at pages.Homepage.searchFile(Homepage.java:116)
-at pages.Homepage.search_File_Root_Location(Homepage.java:335)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:366)
+at tests.HomepageTest.Verify_a3dasm_search(HomepageTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:518:28)
+    at Page._didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\page.js:172:10)
+    at CRPage.didClose (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crPage.js:135:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crBrowser.js:183:14)
+    at CRSession.emit (node:events:518:28)
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\chromium\crConnection.js:138:14
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_a3dasm_search -->
+        <test-method signature="Verify_a3dprt_search()[pri:4, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_a3dprt_search" description="Verify_a3dprt_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="22" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_a3dprt_search(HomepageTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_a3dprt_search -->
+        <test-method signature="Verify_csv_search()[pri:5, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_csv_search" description="Verify_csv_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="13" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_csv_search(HomepageTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_csv_search -->
+        <test-method signature="Verify_dxf_search()[pri:6, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_dxf_search" description="Verify_dxf_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="9" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_dxf_search(HomepageTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_dxf_search -->
+        <test-method signature="Verify_dwg_search()[pri:7, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_dwg_search" description="Verify_dwg_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="9" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_dwg_search(HomepageTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_dwg_search -->
+        <test-method signature="Verify_docx_search()[pri:8, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_docx_search" description="Verify_docx_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="5" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_docx_search(HomepageTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_docx_search -->
+        <test-method signature="Verify_pptx_search()[pri:9, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_pptx_search" description="Verify_pptx_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="5" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_pptx_search(HomepageTest.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_pptx_search -->
+        <test-method signature="Verify_jpg_search()[pri:10, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_jpg_search" description="Verify_jpg_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="5" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_jpg_search(HomepageTest.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_jpg_search -->
+        <test-method signature="Verify_png_search()[pri:11, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_png_search" description="Verify_png_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="7" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_png_search(HomepageTest.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_png_search -->
+        <test-method signature="Verify_xlsx_search()[pri:12, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_xlsx_search" description="Verify_xlsx_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="10" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_xlsx_search(HomepageTest.java:94)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_xlsx_search -->
+        <test-method signature="Verify_tiff_search()[pri:13, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_tiff_search" description="Verify_tiff_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="4" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_tiff_search(HomepageTest.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_tiff_search -->
+        <test-method signature="Verify_folder_search()[pri:14, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="Verify_folder_search" description="Verify_folder_search" finished-at="2026-08-27T16:16:30 IST" duration-ms="42" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_in_SearchBar(Homepage.java:354)
+at tests.HomepageTest.Verify_folder_search(HomepageTest.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_folder_search -->
+        <test-method signature="search_Root_Location_File()[pri:15, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:30 IST" name="search_Root_Location_File" description="search_File_Root_Location" finished-at="2026-08-27T16:16:31 IST" duration-ms="34" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_Root_Location(Homepage.java:386)
+at tests.HomepageTest.search_Root_Location_File(HomepageTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Root_Location_File -->
+        <test-method signature="search_Root_Location_Folder()[pri:16, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:31 IST" name="search_Root_Location_Folder" description="search_Folder_Root_Location" finished-at="2026-08-27T16:16:31 IST" duration-ms="5" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.waitForTimeout(FrameImpl.java:997)
+at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1523)
+at pages.Homepage.searchFile(Homepage.java:110)
+at pages.Homepage.search_File_Root_Location(Homepage.java:386)
 at tests.HomepageTest.search_Root_Location_Folder(HomepageTest.java:118)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -165,105 +1145,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("ui-btn") resolved to 2 elements:
-    1) <span class="ui-button-text ui-clickable">ui-btn</span> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("ui-btn"))
-    2) <span class="ui-button-text ui-clickable">ui-btn</span> aka locator("p-calendar").getByText("ui-btn")
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\chromium\crExecutionContext.js:80:13)
-    at async LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\javascript.js:217:12)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:910:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:880:24)
-    at async Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\frames.js:953:27)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\frameDispatcher.js:117:12)
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\progress.js:78:22)
-    at async FrameDispatcher._runCommand (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:95:14)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-5478862223738583161\package\lib\server\dispatchers\dispatcher.js:329:22)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-15208600220492165901\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
 }
-Call log:
--   - waiting for getByText("ui-btn")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
 at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
 at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-... 39 more
+... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_Root_Location_Folder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomepageTest@4681c175]" started-at="2026-08-21T16:01:00 IST" name="teardown" finished-at="2026-08-21T16:01:01 IST" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomepageTest@48075da3]" started-at="2026-08-27T16:16:31 IST" name="teardown" finished-at="2026-08-27T16:16:31 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.HomepageTest -->
-      <class name="loginTestCases.ValidLoginTestCases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:loginTestCases.ValidLoginTestCases@273444fe]" started-at="2026-08-21T15:55:47 IST" name="setup" finished-at="2026-08-21T15:56:08 IST" duration-ms="21071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:1, instance:loginTestCases.ValidLoginTestCases@273444fe]" started-at="2026-08-21T15:56:08 IST" name="validLoginTest" description="Verify login with valid Company and User credentials" finished-at="2026-08-21T15:56:16 IST" duration-ms="7527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCases.ValidLoginTestCases@273444fe]" started-at="2026-08-21T15:56:16 IST" name="teardown" finished-at="2026-08-21T15:56:16 IST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- loginTestCases.ValidLoginTestCases -->
-      <class name="loginTestCases.InvalidLoginTestCases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:16 IST" name="setup" finished-at="2026-08-21T15:56:19 IST" duration-ms="3008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Verify_login_with_invalid_Username_and_Password()[pri:1, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:19 IST" name="Verify_login_with_invalid_Username_and_Password" description="Verify_login_with_invalid_Company_and_User_credentials" finished-at="2026-08-21T15:56:21 IST" duration-ms="2479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_with_invalid_Username_and_Password -->
-        <test-method signature="Verify_login_with_empty_username_and_wrong_password()[pri:2, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:21 IST" name="Verify_login_with_empty_username_and_wrong_password" description="Verify_login_with_empty_username_and_wrong_password" finished-at="2026-08-21T15:56:23 IST" duration-ms="2252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_with_empty_username_and_wrong_password -->
-        <test-method signature="Verify_login_with_wrong_username_and_empty_password()[pri:3, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:23 IST" name="Verify_login_with_wrong_username_and_empty_password" description="Verify_login_with_wrong_username_and_empty_password" finished-at="2026-08-21T15:56:26 IST" duration-ms="2179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_with_wrong_username_and_empty_password -->
-        <test-method signature="Verify_login_with_empty_username_and_empty_password()[pri:4, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:26 IST" name="Verify_login_with_empty_username_and_empty_password" description="Verify_login_with_wrong_username_and_empty_password" finished-at="2026-08-21T15:56:28 IST" duration-ms="2179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_login_with_empty_username_and_empty_password -->
-        <test-method signature="Verify_userlogin_with_invalid_username_and_invalid_password()[pri:5, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:28 IST" name="Verify_userlogin_with_invalid_username_and_invalid_password" description="Verify_userlogin_with_wrong_username_and_wrong_password" finished-at="2026-08-21T15:56:33 IST" duration-ms="4989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_userlogin_with_invalid_username_and_invalid_password -->
-        <test-method signature="Verify_Userlogin_with_valid_username_and_invalid_password()[pri:6, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:33 IST" name="Verify_Userlogin_with_valid_username_and_invalid_password" description="Verify_Userlogin_with_valid_username_and_invalid_password" finished-at="2026-08-21T15:56:37 IST" duration-ms="4641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Userlogin_with_valid_username_and_invalid_password -->
-        <test-method signature="Verify_Userlogin_with_invalid_username_and_empty_password()[pri:7, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:37 IST" name="Verify_Userlogin_with_invalid_username_and_empty_password" description="Verify_Userlogin_with_invalid_username_and_empty_password" finished-at="2026-08-21T15:56:42 IST" duration-ms="4334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Userlogin_with_invalid_username_and_empty_password -->
-        <test-method signature="Verify_Userlogin_with_invalid_username_and_valid_password()[pri:7, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:42 IST" name="Verify_Userlogin_with_invalid_username_and_valid_password" description="Verify_Userlogin_with_invalid_username_and_valid_password" finished-at="2026-08-21T15:56:46 IST" duration-ms="4527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Userlogin_with_invalid_username_and_valid_password -->
-        <test-method signature="Verify_Userlogin_with_empty_username_and_invalid_password()[pri:8, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:46 IST" name="Verify_Userlogin_with_empty_username_and_invalid_password" description="Verify_Userlogin_with_empty_username_and_invalid_password" finished-at="2026-08-21T15:56:51 IST" duration-ms="4329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Userlogin_with_empty_username_and_invalid_password -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCases.InvalidLoginTestCases@353352b6]" started-at="2026-08-21T15:56:51 IST" name="teardown" finished-at="2026-08-21T15:56:51 IST" duration-ms="441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- loginTestCases.InvalidLoginTestCases -->
     </test> <!-- smoke Tests -->
   </suite> <!-- Playwright Test Suite -->
 </testng-results>

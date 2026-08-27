@@ -34,4 +34,10 @@ public class Rough extends BaseDriver {
 		new Homepage(page).search_Folder_Root_Location(".pdf", "Folder");
 	}
 
+	@Test(priority = 3, description = "search_File_Root_Location")
+	public void search_Root_Location_File() {
+
+		new Homepage(page).search_File_Root_Location(".pdf", "File");
+	}
+
 }
