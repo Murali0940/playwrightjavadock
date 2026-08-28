@@ -484,7 +484,7 @@ public class Homepage {
 
         Allure.step("search_Folder_Root_Location completed successfully.");
 
-        logger.info("search_Folder_Root_Location completed successfully.");
+        logger.info("search_Folder_Root_Location completed successfully..");
 
         page.waitForTimeout(3000);
     }
