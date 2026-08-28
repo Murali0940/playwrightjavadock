@@ -1,7 +1,7 @@
 #=============================
 
 1. stash 
-2. git fetch origin main
+2. git pull origin main
 3. stash -> apply stash ( it will show all the changes)
 4. commit
 5. sync button will do ( pull and push). 
