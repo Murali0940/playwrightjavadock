@@ -482,7 +482,7 @@ public class Homepage {
         // ---------------------------------------------------------
         System.out.println("search_Folder_Root_Location completed successfully.");
 
-        Allure.step("search_Folder_Root_Location completed successfully.");
+        Allure.step("search_Folder_Root_Location completed successfully....");
 
         logger.info("search_Folder_Root_Location completed successfully..");
 
